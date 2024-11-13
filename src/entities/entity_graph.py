@@ -5,20 +5,31 @@ import networkx as nx
 import plotly.graph_objects as go
 import plotly.io as pio
 
+
 def load_graph_data(entities_file, edges_file):
-    """Load the graph data from entities and edges JSON files."""
+    """
+    Load the graph data from entities and edges JSON files.
+    :param entities_file:
+    :param edges_file:
+    :return:
+    """
     with open(entities_file, 'r') as f:
         entity_weights = json.load(f)
-    
+
     with open(edges_file, 'r') as f:
         edges = json.load(f)
 
     return entity_weights, edges
 
+
 def create_filtered_networkx_graph(entity_weights, edges, edge_weight_threshold=6):
     """
     Create a NetworkX graph with filtered edges and nodes.
     Only include edges with a weight greater than the specified threshold.
+    :param entity_weights:
+    :param edges:
+    :param edge_weight_threshold:
+    :return:
     """
     G = nx.Graph()
 
@@ -41,11 +52,15 @@ def create_filtered_networkx_graph(entity_weights, edges, edge_weight_threshold=
 
     return G
 
+
 def visualize_filtered_entity_graph(G, file_path='entity_graph.html'):
     """
     Visualize the filtered entity graph using Plotly and save it as an HTML file.
     The size of nodes will represent their weight, and the thickness of edges will represent the edge weight.
     Node and edge information will be displayed only on hover.
+    :param G:
+    :param file_path:
+    :return:
     """
     # Increase 'k' value and iterations to spread out the graph further
     pos = nx.spring_layout(G, seed=42, k=2, iterations=500)  # Increased 'k' for more spreading
@@ -71,7 +86,7 @@ def visualize_filtered_entity_graph(G, file_path='entity_graph.html'):
     for edge in G.edges(data=True):
         x0, y0 = pos[edge[0]]
         x1, y1 = pos[edge[1]]
-        
+
         # Adjust edge width scaling factor
         edge_width = edge[2]['weight'] / 5  # Reduced scaling factor for edges
         # Add detailed hover information for edges (weight and chunks)
@@ -126,11 +141,11 @@ def visualize_filtered_entity_graph(G, file_path='entity_graph.html'):
     pio.write_html(fig, file=file_path, auto_open=False)  # Save the figure without auto-opening
 
 
-
 def load_entities(file_path):
     """Load the entity-tagged data from a file."""
     with open(file_path, 'r') as f:
         return json.load(f)
+
 
 def create_entity_graph(entities_data):
     """
@@ -139,7 +154,7 @@ def create_entity_graph(entities_data):
     """
     entity_weights = defaultdict(int)  # To count occurrences of each entity (node weight)
     edge_weights = defaultdict(lambda: defaultdict(int))  # To count co-occurrences (edge weights)
-    
+
     # Iterate through each data chunk
     for entry in entities_data:
         chunk_id = entry['id']
@@ -165,6 +180,7 @@ def create_entity_graph(entities_data):
 
     return entity_weights, edge_weights
 
+
 def save_graph(entity_weights, edge_weights, output_dir):
     """Save the entities and edges as separate JSON files."""
     # Save entities with weights
@@ -176,7 +192,7 @@ def save_graph(entity_weights, edge_weights, output_dir):
     # Save edges with their chunk connections
     edges_file = os.path.join(output_dir, 'edges.json')
     formatted_edges = []
-    
+
     for (entity1, entity2), chunks in edge_weights.items():
         formatted_edges.append({
             'entity1': entity1,
@@ -189,14 +205,14 @@ def save_graph(entity_weights, edge_weights, output_dir):
         json.dump(formatted_edges, f, indent=4)
     print(f"Edges saved to {edges_file}")
 
+
 def main():
     # Load the entity-tagged data from both files
-    data_dir = 'data'
+    data_dir = '../data'
     output_dir = 'output'
 
     # Check if the output directory exists
     if not os.path.exists(output_dir):
-        
         os.makedirs(output_dir, exist_ok=True)
 
         medmcqa_data = load_entities(os.path.join(data_dir, 'medmcqa/train_entities.json'))
@@ -212,7 +228,7 @@ def main():
     output_dir = 'output'
     entities_file = f"{output_dir}/entities.json"
     edges_file = f"{output_dir}/edges.json"
-    
+
     entity_weights, edges = load_graph_data(entities_file, edges_file)
 
     # Create a NetworkX graph with filtered edges 
@@ -224,6 +240,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-

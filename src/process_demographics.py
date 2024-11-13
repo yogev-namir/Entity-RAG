@@ -1,32 +1,35 @@
 import json
 import re
 import os
+from config import PREDEFINED_SEX_MAPPING
+
 
 # Predefined mapping for common SEX terms, enriched
-predefined_sex_mapping = {
-    "female": True,
-    "woman": True,
-    "girl": True,
-    "lady": True,
-    "mother": True,
-    "bride": True,
-    
-    "male": False,
-    "man": False,
-    "boy": False,
-    "gentleman": False,
-    "males": False,
-    "groom": False,
+# predefined_sex_mapping = {
+#     "female": True,
+#     "woman": True,
+#     "girl": True,
+#     "lady": True,
+#     "mother": True,
+#     "bride": True,
+#
+#     "male": False,
+#     "man": False,
+#     "boy": False,
+#     "gentleman": False,
+#     "males": False,
+#     "groom": False,
+#
+#     # Terms that should map to None (as they are not gender-specific)
+#     "neonate": None,
+#     "infant": None,
+#     "baby": None,
+#     "newborn": None,
+#     "child": None,
+#     "teenager": None,
+#     "youth": None
+# }
 
-    # Terms that should map to None (as they are not gender-specific)
-    "neonate": None,
-    "infant": None,
-    "baby": None,
-    "newborn": None,
-    "child": None,
-    "teenager": None,
-    "youth": None
-}
 
 def extract_age(age_list):
     """
@@ -43,6 +46,7 @@ def extract_age(age_list):
             return int(match.group(0))
     return None
 
+
 def map_sex(sex_list):
     """
     Convert the first sex entry in the list to a boolean if it contains 'female' or 'male'.
@@ -50,55 +54,48 @@ def map_sex(sex_list):
     """
     if sex_list:
         for sex_value in sex_list:
-            for term, is_female in predefined_sex_mapping.items():
+            for term, is_female in PREDEFINED_SEX_MAPPING.items():  # predefined_sex_mapping.items():
                 if term in sex_value and is_female is not None:
                     return is_female
     return None
+
 
 def process_data(input_file, output_file):
     """
     Process the input file to convert AGE to integer and map SEX to boolean or None.
     Save the processed data to an output file.
     """
-    # Load the original data
     with open(input_file, 'r') as f:
         data = json.load(f)
 
-    # Process each entry
     processed_data = []
     for entry in data:
         processed_entry = entry.copy()
 
-        # Process AGE
         age = extract_age(entry.get('AGE', []))
         if age is not None:
             processed_entry['AGE'] = age
         else:
-            processed_entry['AGE'] = None    
+            processed_entry['AGE'] = None
 
-        # Process SEX
         sex = map_sex(entry.get('SEX', []))
         processed_entry['SEX'] = sex
 
-        # Append processed entry
         processed_data.append(processed_entry)
 
-    # Save the processed data to the output file
     with open(output_file, 'w') as f:
         json.dump(processed_data, f, indent=4)
 
-if __name__ == "__main__":
-    output_dir = 'data/medqa/'
 
-    # Process the medqa dataset
+if __name__ == "__main__":
+
+    output_dir = 'data/medqa/'
     process_data(
         input_file=f'{output_dir}train_entities.json',
         output_file=f'{output_dir}train_entities_demographics.json'
     )
 
     output_dir = 'data/medmcqa/'
-
-    # Process the medmcqa dataset
     process_data(
         input_file=f'{output_dir}train_entities.json',
         output_file=f'{output_dir}train_entities_demographics.json'
