@@ -24,8 +24,6 @@ def retrieve_from_index(query, top_k=5):
     :param top_k: Number of top results to retrieve
     :return: List of retrieved documents
     """
-
-    model = SentenceTransformer('intfloat/multilingual-e5-large')
     query_embedding = model.encode(query).tolist()
 
     results = index.query(
@@ -51,7 +49,8 @@ def retrieve_from_index(query, top_k=5):
 
 def sort_by_edge_values_and_weights(results, edge_key='edge_value', weight_key='weight'):
     """
-    Sort the results based on edge values and weights.
+    Sort the results based on edge values and weights in descentding order.
+    @TODO - change to ascending if better
     :param results: List of retrieved documents with metadata
     :param edge_key:  key for edge values
     :param weight_key: Metadata key for weights
@@ -63,7 +62,7 @@ def sort_by_edge_values_and_weights(results, edge_key='edge_value', weight_key='
             x['metadata'].get(edge_key, 0),
             x['metadata'].get(weight_key, 0)
         ),
-        reverse=True  # Descending order (if higher values are better)
+        reverse=True
     )
     return sorted_results
 
@@ -71,22 +70,22 @@ def sort_by_edge_values_and_weights(results, edge_key='edge_value', weight_key='
 def structure_response(sorted_results):
     """
     Structure the response based on sorted results.
+    Assume the answer (e.g., a letter or symbol) is accessible in the metadata, replace 'answer' with the
+    right answer option.
     :param sorted_results: Sorted list of retrieved documents
     :return: Structured explanation and chosen answer
     """
     if not sorted_results:
         return "No relevant results found.", None
 
-    # Select the top result for explanation
-    top_result = sorted_results[-1]  # [0]
+    top_result = sorted_results[-1]  # [0] ?
     explanation = (
         f"Chosen result explanation: Based on context '{top_result['metadata'].get('text', '')}' "
         f"with edge value {top_result['metadata'].get('edge_value', 'N/A')} "
         f"and weight {top_result['metadata'].get('weight', 'N/A')}."
     )
 
-    # Assume the answer (e.g., a letter or symbol) is accessible in the metadata
-    chosen_answer = top_result['metadata'].get('answer', 'N/A')  # Replace 'answer' with the actual key if different
+    chosen_answer = top_result['metadata'].get('answer', 'N/A')
 
     return explanation, chosen_answer
 
@@ -103,10 +102,4 @@ if __name__ == "__main__":
     sorted_results = sort_by_edge_values_and_weights(retrieved_docs)
     explanation, chosen_answer = structure_response(sorted_results)
 
-    for idx, doc in enumerate(retrieved_docs):
-        print(f"Document {idx + 1}:")
-        print(f"ID: {doc['id']}")
-        print(f"Score: {doc['score']}")
-        print(f"Metadata: {doc['metadata']}\n")
-    print(explanation)
-    print(f"Chosen answer: {chosen_answer}")
+
