@@ -3,6 +3,9 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification
 import json
 from config import RELEVANT_CATEGORIES, PREDEFINED_SEX_MAPPING
 import re
+import os
+from dotenv import load_dotenv
+
 
 load_dotenv()
 ner_model_name = os.getenv('NER_MODEL_NAME')
@@ -10,7 +13,7 @@ tokenizer = AutoTokenizer.from_pretrained(ner_model_name)
 model = AutoModelForTokenClassification.from_pretrained(ner_model_name)
 
 
-def extract_entities(text: str, id: int, partial=True, index_mode=True):
+def extract_entities(text: str, id: int, partial=True, index_mode=True) -> dict:
     """
     1. Tokenize the input
     2. Get the model output
@@ -22,8 +25,8 @@ def extract_entities(text: str, id: int, partial=True, index_mode=True):
     :param index_mode: True if input is part of train set, False for test queries
     :param text: text to extract entities
     :param id: chunk ID
-    :param partial:
-    :return:
+    :param partial: either to extract all entities available in model
+    :return: entities dict
     """
 
     inputs = tokenizer(text, return_tensors="pt")

@@ -1,15 +1,17 @@
+import collections
+import os
+from dotenv import load_dotenv
+
 from sentence_transformers import SentenceTransformer
 from src.indexing.vdb_indexing import *
 from src.entities.medicalNER import *
 
-
 load_dotenv()
-host_url = "https://entity-metadata-index-1024-mcmd0qy.svc.aped-4627-b74a.pinecone.io"
-pc_api_key = 'bb68c35d-a2f2-47a7-9d21-78f0e3b0ab68'
-index_name = "entity-metadata-index-1024"
-dim = 1024
-model_name = os.environ.get('EMBEDDING_MODEL_NAME')
-name_space = os.environ.get('NAME_SPACE')
+host_url = os.getenv('HOST_URL')
+pc_api_key = os.getenv('PINECONE_API_KEY')
+model_name = os.getenv('EMBEDDING_MODEL_NAME')
+name_space = os.getenv('NAME_SPACE')
+index_name = os.getenv('INDEX_NAME')
 pc = init_client(pc_api_key)
 model = SentenceTransformer(model_name)
 index = pc.Index(name=index_name, host=host_url)

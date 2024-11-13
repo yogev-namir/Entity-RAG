@@ -1,22 +1,24 @@
 import collections
 import os
+from dotenv import load_dotenv
+
 from src.indexing.vectorDB_indexing import *
 from sentence_transformers import SentenceTransformer
 from src.entities.entities_extraction import *
 from config import TEST_QUERIES
 
 load_dotenv()
-host_url = os.getenv('HOST_URL')  # "https://entity-metadata-index-1024-mcmd0qy.svc.aped-4627-b74a.pinecone.io"
-pc_api_key = os.getenv('PINECONE_API_KEY')  # 'bb68c35d-a2f2-47a7-9d21-78f0e3b0ab68'
-index_name = os.getenv('INDEX_NAME')  # "entity-metadata-index-1024"  # !!!!!
+host_url = os.getenv('HOST_URL')
+pc_api_key = os.getenv('PINECONE_API_KEY')
 model_name = os.getenv('EMBEDDING_MODEL_NAME')
 name_space = os.getenv('NAME_SPACE')
+index_name = os.getenv('INDEX_NAME')
 pc = init_client(pc_api_key)
 model = SentenceTransformer(model_name)
 index = pc.Index(name=index_name, host=host_url)
 
 
-def retrieve_from_index(query, top_k=5):
+def retrieve_from_index(query, top_k=10):
     """
     Retrieve top-k documents based on the query embedding.
     :param query: Text query
@@ -24,7 +26,6 @@ def retrieve_from_index(query, top_k=5):
     :return: List of retrieved documents
     """
 
-    model = SentenceTransformer('intfloat/multilingual-e5-large')
     query_embedding = model.encode(query).tolist()
 
     results = index.query(
@@ -60,6 +61,7 @@ def metadate_filter(query, query_entities, k=10):
             elif type(values) is bool:
                 values = ['feminin'] if values else ['masculin']
             query_filters[key] = {"$in": values}
+
     results = index.query(
         namespace=name_space,
         vector=query_embedding,

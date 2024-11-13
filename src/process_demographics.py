@@ -4,43 +4,14 @@ import os
 from config import PREDEFINED_SEX_MAPPING
 
 
-# Predefined mapping for common SEX terms, enriched
-# predefined_sex_mapping = {
-#     "female": True,
-#     "woman": True,
-#     "girl": True,
-#     "lady": True,
-#     "mother": True,
-#     "bride": True,
-#
-#     "male": False,
-#     "man": False,
-#     "boy": False,
-#     "gentleman": False,
-#     "males": False,
-#     "groom": False,
-#
-#     # Terms that should map to None (as they are not gender-specific)
-#     "neonate": None,
-#     "infant": None,
-#     "baby": None,
-#     "newborn": None,
-#     "child": None,
-#     "teenager": None,
-#     "youth": None
-# }
-
-
 def extract_age(age_list):
     """
     Convert the first age entry in the list to an integer or specific value for known terms.
     """
     if age_list:
-        # Special cases for 'infant', 'newborn', etc., to translate to age 2
         age_string = age_list[0].lower()
         if any(term in age_string for term in ['infant', 'newborn', 'neonate', 'baby']):
             return 2
-        # Use regular expression to find the first number in the age string
         match = re.search(r'\d+', age_string)
         if match:
             return int(match.group(0))
@@ -88,7 +59,6 @@ def process_data(input_file, output_file):
 
 
 if __name__ == "__main__":
-
     output_dir = 'data/medqa/'
     process_data(
         input_file=f'{output_dir}train_entities.json',

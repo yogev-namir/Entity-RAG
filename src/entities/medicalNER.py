@@ -10,8 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained(ner_model_name)
 model = AutoModelForTokenClassification.from_pretrained(ner_model_name)
 
 
-
-def extract_entities(text, id: int, partial=True) -> dict:
+def extract_entities(text, id: int, partial=True, index_mode=True) -> dict:
     """
     1. Tokenize the input
     2. Get the model output
@@ -20,11 +19,13 @@ def extract_entities(text, id: int, partial=True) -> dict:
     5. Get the mapping of class ids to label names
     6. Initialize an empty dictionary to store results and declare variables to keep track of the current entity,
     7. Process the tokens and their labels
-    :param text:
-    :param id:
+
+    :param text: text to extract entities
+    :param id: chunk ID
     :param partial: True if extraction is limited to
         {"AGE", "SEX", "SIGN_SYMPTOM", "MEDICATION", "BIOLOGICAL_STRUCTURE", "DISEASE_DISORDER"},
         False for using all the availavble entities.
+    :param index_mode: True if input is part of train set, False for test queries
     :return: Dictionary with the extracted entities.
     """
 
@@ -88,6 +89,9 @@ def extract_entities(text, id: int, partial=True) -> dict:
 
     entities['text'] = text
     entities['id'] = id
+
+    if index_mode:
+        entities['id'] = id
 
     return entities
 
