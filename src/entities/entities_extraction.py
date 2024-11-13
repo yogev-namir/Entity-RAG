@@ -10,7 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained(ner_model_name)
 model = AutoModelForTokenClassification.from_pretrained(ner_model_name)
 
 
-def extract_entities(text: str, id: int, partial=True, train=True):
+def extract_entities(text: str, id: int, partial=True, index_mode=True):
     """
     1. Tokenize the input
     2. Get the model output
@@ -19,7 +19,7 @@ def extract_entities(text: str, id: int, partial=True, train=True):
     5. Get the mapping of class ids to label names
     6. Initialize an empty dictionary to store results and declare variables to keep track of the current entity,
     7. Process the tokens and their labels
-    :param train: True if input is part of train set, False for test queries
+    :param index_mode: True if input is part of train set, False for test queries
     :param text: text to extract entities
     :param id: chunk ID
     :param partial:
@@ -80,7 +80,7 @@ def extract_entities(text: str, id: int, partial=True, train=True):
         entities[key] = list(set(entities[key]))
 
     entities['text'] = text
-    if train:
+    if index_mode:
         entities['id'] = id
     age = extract_age(entities.get('AGE', []))
     entities['AGE'] = age if age is not None else None
@@ -117,18 +117,19 @@ def map_sex(sex_list):
     return None
 
 
-def start_extraction(data=None, save_to_path=False, extract_from_source=False, dir_path='../data/',
+def start_extraction(data=None, index_mode=True, save_to_path=False, extract_from_source=False, dir_path='../data/',
                      doc_source='medqa/test'):
     if extract_from_source or not data:
         target_path = dir_path + doc_source + 'json'
         with open(target_path, 'r') as f:
             data = json.load(f)
     elif data is not None:
+        index_mode = False
         print("Entity extraction pipeline initiated...")
 
     data_entities = []
     for ID, query in enumerate(data):
-        ents = extract_entities(text=query, id=ID)  # !!!!!!!!!! entry['generated_explanation']
+        ents = extract_entities(text=query, id=ID, index_mode=index_mode)  # !!!!!!!!!! entry['generated_explanation']
         data_entities.append(ents)
     if save_to_path:
         with open('../data/test/test_entities.json', 'w') as f:

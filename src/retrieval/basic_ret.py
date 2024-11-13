@@ -84,7 +84,7 @@ def metadate_filter(query, query_entities, k=10):
 
 for test in TEST_QUERIES:
     query = test['generated_explanation']
-    query_entities = start_extraction(data=[query], train=False)
+    query_entities = start_extraction(data=[query], index_mode=False)
     print(
         "=============================================================================================================================")
     print(f"Query: {query}")
