@@ -135,11 +135,8 @@ def main():
     len_data_full = len(data_full)
 
     for i, j in zip(range(30, len_data_full, 30), range(60, len_data_full, 30)):
-        data = data_full[i:j]  # For testing purposes, only use a subset of the data
+        data = data_full[i:j]  # only use a subset of the data
 
-        # Example: generating embeddings using a model
-        # You would need an embedding model to generate embeddings for the texts
-        # Replace this with actual embedding generation using your preferred model
         embeddings = pc.inference.embed(
             model="multilingual-e5-large",
             inputs=[d['text'] for d in data],
@@ -150,7 +147,7 @@ def main():
         # Upsert in batches
         for data_chunk, embeddings_chunk in zip(chunks(data, 1), chunks(embeddings, 1)):
             add_to_index(PINECONE_API_KEY, data_chunk, embeddings_chunk, index_name=index_name)
-            # Sleep for 1 second
+            # Sleep for 1 second to avoid http erorrs
             time.sleep(10)
 
         print(f"Data[{i}:{j}] added to the Pinecone index!")
