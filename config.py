@@ -24,20 +24,10 @@ PREDEFINED_SEX_MAPPING = {
     "youth": None
 }
 
+#APP_QUERIES = ["What are the symptoms for Toxoplasmosis?", "What are the symptoms for Zika virus?","What are the unique symptoms of Guillian Barre Syndrome"]
+APP_QUERIES = ["The patient suffered from hypogonadism, failure to thrive, loss of taste and unable to maintain stability. What is the deficiency it shows?"]
+
 TEST_QUERIES = [
-    {
-        "question": "A person of eonism derives pleasure from.",
-        "answer": "Wearing clothes of opposite sex",
-        "answer_index": "opa",
-        "opa": "Wearing clothes of opposite sex",
-        "opb": "Fondling female body pas",
-        "opc": "Rubbing genitalia against body of other person",
-        "opd": "Seeing the opposite paner nude",
-        "generated_explanation": "A person of eonism derives pleasure from. Wearing clothes of opposite sex. Here is "
-                                 "an additional explanation: Ans. a. Wearing clothes of opposite sexIt is a person "
-                                 "whose personality is dominated by the desire to be identified with the opposite sex "
-                                 "It is usuallyfound in males who obtain sexual pleasure by wearingfemale dress."
-    },
     {
         "question": "18 year old female presents with an ovarian mass, her serum bio marker are found to be normal "
                     "except for LDH, which is found to be elevated. The most likely diagnosis is:",

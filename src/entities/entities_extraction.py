@@ -128,7 +128,7 @@ def start_extraction(data=None, index_mode=True, save_to_path=False, extract_fro
             data = json.load(f)
     elif data is not None:
         index_mode = False
-        print("Entity extraction pipeline initiated...")
+        #print("Entity extraction pipeline initiated...")
 
     data_entities = []
     for ID, query in enumerate(data):

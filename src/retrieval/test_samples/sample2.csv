@@ -1,0 +1,172 @@
+,question,answer,answer_index,opa,opb,opc,opd,generated_explanation,mod_question,query,benchmark_responses,hubs_responses,bench_rank,hubs_rank
+255,Partial veneer crown is contraindicated in,Short teeth,opb,Long teeth,Short teeth,Tipped teeth,Tapered teeth,Partial veneer crown is contraindicated in Short teeth. ,"For the given question, choose the correct answer from the options_list.
+
+question: Partial veneer crown is contraindicated in
+
+options_list: [option_a:Long teeth
+option_b:Short teeth
+,option_c:Tipped teeth
+option_d:Tapered teeth]
+","question: Partial veneer crown is contraindicated in
+
+option_a:Long teeth
+option_b:Short teeth
+option_c:Tipped teeth
+option_d:Tapered teeth
+",Partial veneer crown is contraindicated in option_a: Long teeth.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+241,Active form of vitamin D in kidney is:,"1, 25 dihydroxy cholecalciferol",opc,1 dihydroxy cholecalciferol,25 hydroxy cholecalciferol,"1, 25 dihydroxy cholecalciferol",7 dihydroxy calciferol,"Active form of vitamin D in kidney is: 1, 25 dihydroxy cholecalciferol. ","For the given question, choose the correct answer from the options_list.
+
+question: Active form of vitamin D in kidney is:
+
+options_list: [option_a:1 dihydroxy cholecalciferol
+option_b:25 hydroxy cholecalciferol
+,option_c:1, 25 dihydroxy cholecalciferol
+option_d:7 dihydroxy calciferol]
+","question: Active form of vitamin D in kidney is:
+
+option_a:1 dihydroxy cholecalciferol
+option_b:25 hydroxy cholecalciferol
+option_c:1, 25 dihydroxy cholecalciferol
+option_d:7 dihydroxy calciferol
+","The active form of vitamin D in the kidney is option c: 1, 25 dihydroxy cholecalciferol.","Answer: option_c: 1, 25 dihydroxy cholecalciferol
+
+Explanation: The context mentions that the active form of vitamin D is calcitriol, which is also known as 1,25-dihydroxycholecalciferol. This form of vitamin D is produced by the kidneys and plays a crucial role in calcium and bone homeostasis.",Incorrect,Correct
+319,Rake angle for tungsten carbide burs:,Both BC,opd,Positive.,Neutral.,Slight negative.,Both BC,Rake angle for tungsten carbide burs: Both BC. ,"For the given question, choose the correct answer from the options_list.
+
+question: Rake angle for tungsten carbide burs:
+
+options_list: [option_a:Positive.
+option_b:Neutral.
+,option_c:Slight negative.
+option_d:Both BC]
+","question: Rake angle for tungsten carbide burs:
+
+option_a:Positive.
+option_b:Neutral.
+option_c:Slight negative.
+option_d:Both BC
+",Slight negative.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+376,Which of the following Slatements is not true?,The unionized fraction of calcium in the plasma is an impoant determinant of PTH secretion,opb,Parathyroid hormone-related protein is responsible for causing hypercalcemia in cancer patients,The unionized fraction of calcium in the plasma is an impoant determinant of PTH secretion,Mg2+ influences PTH secretion in the same direction as Ca2+ but is a less potent secretagogue,Ca2+influences PTH secretion by acting on a calcium sensor G-protein coupled receptor located in the parathyroid gland,"Which of the following Slatements is not true? The unionized fraction of calcium in the plasma is an impoant determinant of PTH secretion. Here is an additional explanation: Ans. b. The unionized fraction of calcium in the plasma is an impoant determinant of PTH secretion""Circulating ionized calcium acts directly on the parathyroid glands in a negative feedback fashion to regulate the secretion of PTH.""Magnesium is required to maintain normal parathyroid secretory responses. Impaired PTH release along with diminished target responses to PTH account fir the hypocalcaemia that occasionally occurs in magnesium deficiency","For the given question, choose the correct answer from the options_list.
+
+question: Which of the following Slatements is not true?
+
+options_list: [option_a:Parathyroid hormone-related protein is responsible for causing hypercalcemia in cancer patients
+option_b:The unionized fraction of calcium in the plasma is an impoant determinant of PTH secretion
+,option_c:Mg2+ influences PTH secretion in the same direction as Ca2+ but is a less potent secretagogue
+option_d:Ca2+influences PTH secretion by acting on a calcium sensor G-protein coupled receptor located in the parathyroid gland]
+","question: Which of the following Slatements is not true?
+
+option_a:Parathyroid hormone-related protein is responsible for causing hypercalcemia in cancer patients
+option_b:The unionized fraction of calcium in the plasma is an impoant determinant of PTH secretion
+option_c:Mg2+ influences PTH secretion in the same direction as Ca2+ but is a less potent secretagogue
+option_d:Ca2+influences PTH secretion by acting on a calcium sensor G-protein coupled receptor located in the parathyroid gland
+",The answer is option_a: Parathyroid hormone-related protein is responsible for causing hypercalcemia in cancer patients.,"Answer: option_a
+Explanation: The context mentions that hyperparathyroidism can lead to increased calcium levels, and parathyroid adenomas are a common cause of primary hyperparathyroidism. However, there is no mention of cancer patients experiencing hypercalcemia due to parathyroid hormone-related protein. Therefore, option A is the only statement that is not supported by the provided information.",Incorrect,Incorrect
+239,Minimum number of lobes required to form a permanent tooth,4,opd,1,2,3,4,Minimum number of lobes required to form a permanent tooth 4. Here is an additional explanation: For permanent dentition,"For the given question, choose the correct answer from the options_list.
+
+question: Minimum number of lobes required to form a permanent tooth
+
+options_list: [option_a:1
+option_b:2
+,option_c:3
+option_d:4]
+","question: Minimum number of lobes required to form a permanent tooth
+
+option_a:1
+option_b:2
+option_c:3
+option_d:4
+","The answer is option_a: 1. 
+
+A tooth with a single lobe is sufficient to form a permanent tooth.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+398,Figure depicts:,Anticurvature filing,opb,Balanced force technique,Anticurvature filing,Standarized technique,,"Figure depicts: Anticurvature filing. Here is an additional explanation: Anticurvature Filing
+This technique is designed to keep files away from the furcational zone of curved root canals thus preventing excessive removal of dentin and strip perforations at this critical zone. This goal should be achieved by use of precurved instruments (files) at the outer side of the curvature.
+When the file can be easily negotiated around the ledge, anticurvature filing will enable the clinician to blend the ledge into the canal preparation.","For the given question, choose the correct answer from the options_list.
+
+question: Figure depicts:
+
+options_list: [option_a:Balanced force technique
+option_b:Anticurvature filing
+,option_c:Standarized technique
+option_d:None]
+","question: Figure depicts:
+
+option_a:Balanced force technique
+option_b:Anticurvature filing
+option_c:Standarized technique
+option_d:None
+",The figure depicts the standardized technique.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+142,A drop in fetal heart rate that typically last less than 2 minutes and usually associated with umbilical cord compression is called:,Variable deceleration,opc,Early deceleration,Late deceleration,Variable deceleration,Prolonged deceleration,A drop in fetal heart rate that typically last less than 2 minutes and usually associated with umbilical cord compression is called: Variable deceleration. ,"For the given question, choose the correct answer from the options_list.
+
+question: A drop in fetal heart rate that typically last less than 2 minutes and usually associated with umbilical cord compression is called:
+
+options_list: [option_a:Early deceleration
+option_b:Late deceleration
+,option_c:Variable deceleration
+option_d:Prolonged deceleration]
+","question: A drop in fetal heart rate that typically last less than 2 minutes and usually associated with umbilical cord compression is called:
+
+option_a:Early deceleration
+option_b:Late deceleration
+option_c:Variable deceleration
+option_d:Prolonged deceleration
+",option_a: Early deceleration.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+511,Keeping in Jack-knife position for long leads to death by:,Positional asphyxia,opc,Wedging,Burking,Positional asphyxia,Traumatic asphyxia,"Keeping in Jack-knife position for long leads to death by: Positional asphyxia. Here is an additional explanation: Answer- C. Positional asphyxiaKeeping in Jack-knife position for long leads to death by positional asphyxia.""Postural or Positional Asphyxia"":Occasionally, it results from indirect compression, when the body is subjected to force in such a manner that his thighs and the knees are driven against his chest, the so-called ""Jack-Knife"" position. There is usually marked congestion, cyanosis, and petechiae in the face and neck.This occurs when the individual acquires a ceain body position in which breathing is impaired, often because of neck twisting with kinking or compression of trachea and/or elevation of the tongue into the posterior hypopharynx. Normal venous return to the hea may be impaired.The body is typically inveed (upside-down) & weight of abdominal contents press against the diaphragm pushing it upwards, thus compressing the thoracic organs, which combined with decreased respiratory movements, leads to cardiorespiratory failure & death.It is always accidental","For the given question, choose the correct answer from the options_list.
+
+question: Keeping in Jack-knife position for long leads to death by:
+
+options_list: [option_a:Wedging
+option_b:Burking
+,option_c:Positional asphyxia
+option_d:Traumatic asphyxia]
+","question: Keeping in Jack-knife position for long leads to death by:
+
+option_a:Wedging
+option_b:Burking
+option_c:Positional asphyxia
+option_d:Traumatic asphyxia
+","Based on the information provided, the answer is option_c: Positional asphyxia.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Correct,Don't know
+505,First line therapy in anaphylactic shock is:,Epinephrine .5 ml of 1:1000 IM,opc,Adenosine 12 mg intravenously,Atropine 3 mg intravenously,Epinephrine .5 ml of 1:1000 IM,Epinephrine 1 ml of 1:10000 intravenously,First line therapy in anaphylactic shock is: Epinephrine .5 ml of 1:1000 IM. Here is an additional explanation: Cause of death in anaphylactic shock is laryngeal edema. Undiluted adrenaline / epinephrine IM 0.5 ml of 1:1000 IM in thigh Option A- For PSVT Option B- For bradycardia Option D- For cardiac arrest,"For the given question, choose the correct answer from the options_list.
+
+question: First line therapy in anaphylactic shock is:
+
+options_list: [option_a:Adenosine 12 mg intravenously
+option_b:Atropine 3 mg intravenously
+,option_c:Epinephrine .5 ml of 1:1000 IM
+option_d:Epinephrine 1 ml of 1:10000 intravenously]
+","question: First line therapy in anaphylactic shock is:
+
+option_a:Adenosine 12 mg intravenously
+option_b:Atropine 3 mg intravenously
+option_c:Epinephrine .5 ml of 1:1000 IM
+option_d:Epinephrine 1 ml of 1:10000 intravenously
+",The first line of therapy in anaphylactic shock is Epinephrine 0.5 ml of 1:1000 administered through the intramuscular route.,"Answer: option_c: Epinephrine .5 ml of 1:1000 IM
+
+Explanation: According to the provided contexts, atropine is not recommended as first-line therapy in anaphylactic shock. Atropine is used for certain types of nerve agent and pesticide poisonings, as well as for slowing heart rate and reducing saliva production. However, it is not recommended for routine use in the management of pulseless electrical activity (PEA) or asystole, as per the AHA 2020 guidelines. Therefore, option B can be eliminated. 
+
+Additionally, the contexts mention that epinephrine is used in cardiac arrest and is administered at a specific dose and interval. While the exact dose mentioned in option D (1 ml of 1:10000) is not specified, the context does state that the dose and interval for epinephrine remain unchanged in the ACLS guidelines. This suggests that option D may be a viable treatment option, but it is not explicitly stated to be the first-line therapy for anaphylactic shock. 
+
+Therefore, based on the information provided, the correct answer is option C: Epinephrine .5 ml of 1:1000 IM. This aligns with the context stating that epinephrine is used in cardiac arrest and that the dose and interval for its administration remain unchanged.",Correct,Correct
+171,"The case of biliary duct stricture with retching and vomiting, given 3mg morphine epiduraly daily, one day 12 mg mistakenly dose of epidural, morphine given. Not present:-",Overstimulation of respiratory centre,opd,Itching,Urinary retention,Increase vomiting,Overstimulation of respiratory centre,"The case of biliary duct stricture with retching and vomiting, given 3mg morphine epiduraly daily, one day 12 mg mistakenly dose of epidural, morphine given. Not present:- Overstimulation of respiratory centre. Here is an additional explanation: Side effect of high dose epidural opioid: Nausea and vomiting Pruritis Urinary retention Respiratory depression High dose of opioid can spread centrally and stimulate CTZ center and can precipitate nausea and vomiting. Pruritis due to morphine is not due to histamine release, high dose morphine can spread centrally, act on trigeminal nerve and cause pruritis. Urinary retention in morphine use is due to it's action on sacral spinal cord, therefore it can happen even at normal dose and not related to high dose. Respiratory depression in morphine overdose due to migration of morphine centrally.","For the given question, choose the correct answer from the options_list.
+
+question: The case of biliary duct stricture with retching and vomiting, given 3mg morphine epiduraly daily, one day 12 mg mistakenly dose of epidural, morphine given. Not present:-
+
+options_list: [option_a:Itching
+option_b:Urinary retention
+,option_c:Increase vomiting
+option_d:Overstimulation of respiratory centre]
+","question: The case of biliary duct stricture with retching and vomiting, given 3mg morphine epiduraly daily, one day 12 mg mistakenly dose of epidural, morphine given. Not present:-
+
+option_a:Itching
+option_b:Urinary retention
+option_c:Increase vomiting
+option_d:Overstimulation of respiratory centre
+",vomiting,"Answer: option_c: Increase vomiting
+
+Explanation: The patient in question has a biliary duct stricture and is experiencing retching and vomiting. They are administered morphine, and due to an error, they receive a higher dose than intended. Morphine is known to have side effects, particularly when it comes to the gastrointestinal system, and one of its common side effects is nausea and vomiting. Given the patient's existing condition and the fact that they are already experiencing vomiting, an increased dose of morphine could exacerbate these symptoms and lead to increased vomiting.",Incorrect,Incorrect

@@ -50,7 +50,6 @@ def retrieve_from_index(query, top_k=5):
 def sort_by_edge_values_and_weights(results, edge_key='edge_value', weight_key='weight'):
     """
     Sort the results based on edge values and weights in descentding order.
-    @TODO - change to ascending if better
     :param results: List of retrieved documents with metadata
     :param edge_key:  key for edge values
     :param weight_key: Metadata key for weights
@@ -90,6 +89,45 @@ def structure_response(sorted_results):
     return explanation, chosen_answer
 
 
+
+
+def hits_rerank(original_query: str, retrieved_k_docs: list, n: int):
+    """
+    Rerank the top k retrieved documents using the HITS algorithm.
+    :param original_query: The original query string.
+    :param retrieved_k_docs: List of dictionaries containing 'id' and 'metadata' for retrieved documents.
+                             Each document metadata should contain a list of references or related documents.
+    :return: A list of the 10 most relevant documents (sorted by authority scores).
+    """
+    G = nx.DiGraph()
+
+    # Step 2: Add nodes for each document
+    for doc in retrieved_k_docs:
+        doc_id = doc['id']
+        G.add_node(doc_id, metadata=doc.get('metadata', {}))
+
+    # Step 3: Add edges based on document relationships (e.g., references or links)
+    for doc in retrieved_k_docs:
+        doc_id = doc['id']
+        related_docs = retrieve_from_index(doc['metadata']['text'])
+        for r_doc in related_docs:
+            related_doc_id = r_doc['id']
+            if related_doc_id in G.nodes:  # Only link to documents in the retrieved set
+                G.add_edge(doc_id, related_doc_id)
+
+    hits_scores = nx.hits(G, normalized=True)
+    authority_scores = hits_scores[1]
+
+    # Step 5: Sort documents by authority scores
+    ranked_docs = sorted(
+        retrieved_k_docs,
+        key=lambda doc: authority_scores.get(doc['id'], 0),
+        reverse=True
+    )
+
+    return ranked_docs[:n]
+
+
 if __name__ == "__main__":
     query_text = """A 23-year-old woman comes to the physician because of a 2-month history of episodic headaches 
     associated with dizziness, nausea, and vomiting. Over-the-counter pain medications have failed to reduce her 
@@ -101,5 +139,3 @@ if __name__ == "__main__":
     retrieved_docs = retrieve_from_index(query_text, top_k=top_k)
     sorted_results = sort_by_edge_values_and_weights(retrieved_docs)
     explanation, chosen_answer = structure_response(sorted_results)
-
-
