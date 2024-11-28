@@ -66,76 +66,47 @@ def sort_by_edge_values_and_weights(results, edge_key='edge_value', weight_key='
     return sorted_results
 
 
-def structure_response(sorted_results):
-    """
-    Structure the response based on sorted results.
-    Assume the answer (e.g., a letter or symbol) is accessible in the metadata, replace 'answer' with the
-    right answer option.
-    :param sorted_results: Sorted list of retrieved documents
-    :return: Structured explanation and chosen answer
-    """
-    if not sorted_results:
-        return "No relevant results found.", None
+def rerank(G, retrived_k_docs, n, method='HITS', metric='hubs'):
+    if method == 'HITS':
+        hits_scores = nx.hits(G, normalized=True)
+        if metric == 'hubs':
+            ranked_docs = apply_hits(hits_scores=hits_scores, retrieved_docs=retrived_k_docs, n=n, metric='hubs')
+        else:
+            ranked_docs = apply_hits(hits_scores=hits_scores, retrieved_docs=retrived_k_docs, n=n, metric='auth')
+    else:
+        ranked_docs = apply_pagerank(G, retrieved_k_docs=retrived_k_docs, n=n)
 
-    top_result = sorted_results[-1]  # [0] ?
-    explanation = (
-        f"Chosen result explanation: Based on context '{top_result['metadata'].get('text', '')}' "
-        f"with edge value {top_result['metadata'].get('edge_value', 'N/A')} "
-        f"and weight {top_result['metadata'].get('weight', 'N/A')}."
-    )
-
-    chosen_answer = top_result['metadata'].get('answer', 'N/A')
-
-    return explanation, chosen_answer
+    return G, ranked_docs
 
 
-
-
-def hits_rerank(original_query: str, retrieved_k_docs: list, n: int):
-    """
-    Rerank the top k retrieved documents using the HITS algorithm.
-    :param original_query: The original query string.
-    :param retrieved_k_docs: List of dictionaries containing 'id' and 'metadata' for retrieved documents.
-                             Each document metadata should contain a list of references or related documents.
-    :return: A list of the 10 most relevant documents (sorted by authority scores).
-    """
-    G = nx.DiGraph()
-
-    # Step 2: Add nodes for each document
-    for doc in retrieved_k_docs:
-        doc_id = doc['id']
-        G.add_node(doc_id, metadata=doc.get('metadata', {}))
-
-    # Step 3: Add edges based on document relationships (e.g., references or links)
-    for doc in retrieved_k_docs:
-        doc_id = doc['id']
-        related_docs = retrieve_from_index(doc['metadata']['text'])
-        for r_doc in related_docs:
-            related_doc_id = r_doc['id']
-            if related_doc_id in G.nodes:  # Only link to documents in the retrieved set
-                G.add_edge(doc_id, related_doc_id)
-
-    hits_scores = nx.hits(G, normalized=True)
+def apply_hits(hits_scores, retrieved_docs, n, metric="hubs"):
+    hubs_scores = hits_scores[0]
     authority_scores = hits_scores[1]
-
-    # Step 5: Sort documents by authority scores
-    ranked_docs = sorted(
-        retrieved_k_docs,
-        key=lambda doc: authority_scores.get(doc['id'], 0),
-        reverse=True
-    )
-
+    if metric == 'hubs':
+        ranked_docs = sorted(
+            retrieved_docs,
+            key=lambda doc: hubs_scores.get(doc['id'], 0),
+            reverse=True
+        )
+    else:  # metric == 'auth':
+        ranked_docs = sorted(
+            retrieved_docs,
+            key=lambda doc: authority_scores.get(doc['id'], 0),
+            reverse=True
+        )
     return ranked_docs[:n]
 
 
-if __name__ == "__main__":
-    query_text = """A 23-year-old woman comes to the physician because of a 2-month history of episodic headaches 
-    associated with dizziness, nausea, and vomiting. Over-the-counter pain medications have failed to reduce her 
-    symptoms. " "An MRI of the brain shows isolated dilation of the left lateral ventricle. " "This dilatation is 
-    most likely caused by blockade of which of the following structures? {"opa": "Arachnoid villi", 
-    "opb": "Interventricular foramen", "opc": "Median aperture", "opd": "Lateral apertures"}"""
-    top_k = 5
+def apply_pagerank(G, retrieved_k_docs, n):
+    """
+    Apply PageRank to the graph and rank the retrieved documents.
 
-    retrieved_docs = retrieve_from_index(query_text, top_k=top_k)
-    sorted_results = sort_by_edge_values_and_weights(retrieved_docs)
-    explanation, chosen_answer = structure_response(sorted_results)
+    :param G: NetworkX graph.
+    :param retrieved_k_docs: List of retrieved documents, each with an 'id'.
+    :param n: Number of top-ranked documents to return.
+    :return: The graph with updated PageRank scores and the top `n` ranked documents.
+    """
+
+    pr_scores = nx.pagerank(G, alpha=0.95)
+    ranked_docs = sorted(retrieved_k_docs, key=lambda doc: pr_scores.get(doc['id'], 0), reverse=True)
+    return ranked_docs[:n]

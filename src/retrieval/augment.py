@@ -86,6 +86,46 @@ def augment_prompt2(query: str, top_relevant_docs: list, options: dict) -> str:
     return augmented_prompt
 
 
+def benchmark_response(query, retrieved_docs):
+    source_knowledge = "\n\n".join([doc['text'] for doc in retrieved_docs])
+
+    augmented_prompt = (
+        f"Using the contexts below, answer the query. If you don't know the answer, say you don't know."
+        f"Source: {source_knowledge}"
+        f"Query: {query}"
+    )
+    response = co.chat(
+        model='command-r-plus',
+        message=augmented_prompt,
+    )
+    print(response.text)
+    return response.text
+
+
+def generate_response(query, retreived_docs):
+    source_knowledge = "\n\n".join([doc['metadata']['text'] for doc in retreived_docs])
+
+    augmented_prompt = f"Using the contexts below, determine the correct answer to the query while aligning with the medical information provided." \
+                       f"Then explain your choice based on the provided context. If you don't know the answer, say you can not answer.\n\n" \
+                       f"Question: {query}\n\n" \
+                       f"Relevant Contexts:{source_knowledge}\n\n" \
+                       f"Your response should be exactly in the following format:" \
+                       f"Answer: <correct answer from [option_a, option_b, option_c, option_d]>\n" \
+                       f"Explanation: <relevant information from the context>\n\n"
+
+    response = co.chat(
+        model='command-r-plus',
+        message=augmented_prompt,
+    )
+    if not response.text or "cannot" in response.text.lower():
+        explanation = ("Explanation: The retrieved knowledge did not contain sufficient context to determine the "
+                       "correct answer.")
+        return f"Cannot determine the correct answer.\n{explanation}"
+
+    print(response.text)
+    return response.text
+
+
 def generate_response(augmented_prompt):
     response = co.chat(
         model='command-r-plus',
@@ -119,5 +159,3 @@ def generate_response(query, metadatas):
     print("==============================================================================================")
     print(response.text)
     print("==============================================================================================")
-
-

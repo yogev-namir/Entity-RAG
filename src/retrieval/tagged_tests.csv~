@@ -1,0 +1,470 @@
+id,query,benchmark_responses,hubs_responses,bench_rank,hubs_rank
+621,"question: Exact number of weeks between last menstrual period and expected date of delivery :March 2005
+
+option_a:38 weeks
+option_b:39 weeks
+option_c:40 weeks
+option_d:41 weeks
+",I don't know. The query does not seem to be related to the provided contexts.,"option_c: 40 weeks. 
+
+A normal, full-term pregnancy typically lasts about 40 weeks from the first day of the last menstrual period to the expected date of delivery.",Don't know,Correct
+579,"question: Deciduous teeth do not show fluorosis because:
+
+option_a:Placenta acts as a barrier
+option_b:Fluoride is taken up by the fast growing skeletal tissue
+option_c:The calcification time of deciduous teeth is less
+option_d:All of the above
+",Deciduous teeth do not show fluorosis because option c: The calcification time of deciduous teeth is less.,"Deciduous teeth do not show fluorosis because: **option_d: All of the above**. 
+
+The placenta acts as a barrier, preventing the transfer of most substances, including fluoride, to the developing fetus. Fluoride is preferentially taken up by the fast-growing skeletal tissue, leaving less to impact the developing deciduous teeth. Additionally, the shorter calcification time of deciduous teeth compared to permanent teeth means there is a reduced window for fluorosis to occur.",Incorrect,Correct
+653,"question: Location of MB2 in maxillary first molar
+
+option_a:Distopalatal to MB1
+option_b:Mesiobuccal to MB1
+option_c:Distobuccal to MB1
+option_d:Mesiopalatal to MB1
+",I don't know.,"The answer is option_a: Distopalatal to MB1. 
+
+The MB2 (Mesiobuccal 2) canal in a maxillary first molar is typically located distopalatal to the MB1 (Mesiobuccal 1) canal. This is due to the complex anatomy of the mesiobuccal root, which often houses two canals in this tooth. The MB2 canal is often more challenging to locate and negotiate compared to the MB1 canal. It is important to thoroughly explore the mesiobuccal root during endodontic treatment to ensure all canals are identified and treated appropriately.",Don't know,Incorrect
+682,"question: Occulomotor nerve passes through
+
+option_a:Foramen rotundum
+option_b:Superior orbital fissure
+option_c:Inferior orbital fissure
+option_d:Foramen ovale
+",The answer is c) Inferior orbital fissure.,"The correct answer is **option_b: Superior orbital fissure**. 
+
+The context provided states that a patient with a metal rod inserted into the superior orbital fissure experienced damage to the oculomotor and ophthalmic nerves. This indicates that the oculomotor nerve passes through the superior orbital fissure. 
+
+Additional Explanation:
+The superior orbital fissure is a space in the skull located between the lesser and greater wings of the sphenoid bone, within the orbital cavity. It serves as a passageway for several important structures, including the oculomotor nerve, which is responsible for controlling the movements of the eye muscles, as well as providing sensory and parasympathetic innervation to the eye.",Incorrect,Correct
+88,"question: Mid palatal split following Le-Fort 1 osteotomy is done by moving the maxilla in which direction?
+
+option_a:Superior
+option_b:Inferior
+option_c:Antero-posterior
+option_d:Transverse
+",The answer is option_b:Inferior.,"**Answer: Option B: Inferior**
+
+Explanation: Le-Fort 1 osteotomy involves cutting the maxilla down and away from the face (inferiorly), while a mid-palatal split further separates the maxilla along the midline. This combined procedure allows for movement of the maxilla in the inferior direction, providing access to the nasal cavity and sinuses for surgical correction or reconstruction.",Incorrect,Incorrect
+236,"question: Lacrimation is affected due to damage to which of the following nerves?
+
+option_a:Nasociliary nerve
+option_b:Greater petrosal nerve
+option_c:Trigeminal nerve
+option_d:Anterior ethmoid nerve
+","The correct answer is option_a: Nasociliary nerve.
+
+The nasociliary nerve is a branch of the ophthalmic nerve (one of the three divisions of the trigeminal nerve), and it supplies the lacrimal gland, which produces tears. Damage to the nasociliary nerve can affect lacrimation (tear production and secretion).","**Option A: Nasociliary nerve**
+
+The nasociliary nerve is a branch of the ophthalmic nerve, which is one of the three divisions of the trigeminal nerve (CN V). The trigeminal nerve is indeed mentioned in the context, but not in relation to lacrimation. However, it is important to understand the structure and functions of the trigeminal nerve to identify its role in lacrimation.
+
+Now, let's understand why the correct answer is the nasociliary nerve:
+
+The trigeminal nerve (CN V) has three main branches: the ophthalmic nerve, the maxillary nerve, and the mandibular nerve. The ophthalmic nerve has several branches, including the nasociliary nerve, which provides sensory innervation to the nasal cavity, ethmoid air sinuses, and the skin of the lower half of the nose and upper lip. Importantly, the nasociliary nerve also carries postganglionic parasympathetic fibers that are derived from the facial nerve (CN VII) via the ciliary ganglion. These parasympathetic fibers are responsible for lacrimation, or tear production, by stimulating the lacrimal gland.
+
+So, if there is damage to the nasociliary nerve, lacrimation would be affected because the nerve no longer carries the parasympathetic signals to the lacrimal gland for tear production.
+
+While the other options are all related to the nervous system, they are not directly involved in lacrimation:
+- Greater petrosal nerve (option B): This nerve is involved in supplying parasympathetic innervation to the lacrimal nerve, which then carries these fibers to the lacrimal gland for tear production. However, the question specifically asks about direct damage to a nerve affecting lacrimation, and the nasociliary nerve is the direct link in this case.
+- Trigeminal nerve (option C): While the trigeminal nerve is important for sensory and motor functions in the head and face, it is not directly responsible for lacrimation. The trigeminal nerve itself does not carry parasympathetic fibers for tear production.
+- Anterior ethmoid nerve (option D): This nerve is a branch of the nasal branch of the ophthalmic nerve. It provides sensory innervation to the ethmoid air sinuses and the nasal mucosa. It is not directly involved in lacrimation.",Incorrect,Incorrect
+597,"question: Tooth brush abrasions are more common on the
+
+option_a:Mandibular teeth, on the right half of the arch
+option_b:Mandibular teeth, on the left half of the arch
+option_c:Maxillary teeth, on the right half of the arch
+option_d:Maxillary teeth, on the left half of the arch
+","Tooth brush abrasions are most commonly found on the maxillary teeth, specifically on the left half of the arch (option d). This is due to the fact that most people are right-handed and tend to apply more force when brushing the left side of the maxillary arch. The correct answer is option D.","answer: Maxillary teeth, on the left half of the arch.",Correct,Correct
+614,"question: Hardness of stone surface is affected by?
+
+option_a:Impression wax
+option_b:Impression compound
+option_c:Hydrocolloid impression material
+option_d:Rubber based material
+",The hardness of a stone surface is affected by rubber-based material.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+127,"question: Initial clicking of TMJ while opening is due to
+
+option_a:Protruded condyle in respect to articular disc
+option_b:Retruded condyle in respect to articular disc
+option_c:Perforated disc
+option_d:Lateral displacement of the condyle
+",The initial clicking of TMJ while opening is due to a protruded condyle in respect to the articular disc.,"**Option A: Protruded condyle in respect to articular disc** is the correct answer. 
+
+The initial clicking sound in TMJ (Temporomandibular Joint) disorders is often associated with the displacement of the articular disc, which is a result of a protruded condyle. This occurs when the condyle moves forward and the articular disc is unable to maintain its normal position, leading to a temporary displacement and the characteristic clicking sound. 
+
+The provided context mentions the role of the lateral pterygoid muscle in controlling the position and movement of the articular disc. A medial dislocation of a fractured condyle can also be caused by this muscle, further highlighting its importance in TMJ function. 
+
+While the other options may be related to TMJ disorders or dysfunction, they do not directly explain the initial clicking sound.",Incorrect,Incorrect
+635,"question: Lipoarabinomannan (LAM) assay in urine is used for screening of?
+
+option_a:Mycobacterium tuberculosis
+option_b:Pneumocystis jirovecii
+option_c:Histoplasm capsulatum
+option_d:Cryptococcus neoformans
+",Lipoarabinomannan (LAM) assay in urine is used for screening of Mycobacterium tuberculosis.,"option_a: Mycobacterium tuberculosis. 
+
+Here is an additional explanation: The Lipoarabinomannan (LAM) assay is a diagnostic test used specifically for the detection of Mycobacterium tuberculosis, the causative agent of tuberculosis. This test utilizes urine samples to screen for the presence of LAM, a major component of the cell wall in mycobacteria. A positive result indicates the likelihood of Mycobacterium tuberculosis infection, aiding in the diagnosis and subsequent management of this infectious disease.",Correct,Correct
+255,"question: Partial veneer crown is contraindicated in
+
+option_a:Long teeth
+option_b:Short teeth
+option_c:Tipped teeth
+option_d:Tapered teeth
+",Partial veneer crown is contraindicated in option_a: Long teeth.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+241,"question: Active form of vitamin D in kidney is:
+
+option_a:1 dihydroxy cholecalciferol
+option_b:25 hydroxy cholecalciferol
+option_c:1, 25 dihydroxy cholecalciferol
+option_d:7 dihydroxy calciferol
+","The active form of vitamin D in the kidney is option c: 1, 25 dihydroxy cholecalciferol.","Answer: option_c: 1, 25 dihydroxy cholecalciferol
+
+Explanation: The context mentions that the active form of vitamin D is calcitriol, which is also known as 1,25-dihydroxycholecalciferol. This form of vitamin D is produced by the kidneys and plays a crucial role in calcium and bone homeostasis.",Incorrect,Correct
+319,"question: Rake angle for tungsten carbide burs:
+
+option_a:Positive.
+option_b:Neutral.
+option_c:Slight negative.
+option_d:Both BC
+",Slight negative.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+376,"question: Which of the following Slatements is not true?
+
+option_a:Parathyroid hormone-related protein is responsible for causing hypercalcemia in cancer patients
+option_b:The unionized fraction of calcium in the plasma is an impoant determinant of PTH secretion
+option_c:Mg2+ influences PTH secretion in the same direction as Ca2+ but is a less potent secretagogue
+option_d:Ca2+influences PTH secretion by acting on a calcium sensor G-protein coupled receptor located in the parathyroid gland
+",The answer is option_a: Parathyroid hormone-related protein is responsible for causing hypercalcemia in cancer patients.,"Answer: option_a
+Explanation: The context mentions that hyperparathyroidism can lead to increased calcium levels, and parathyroid adenomas are a common cause of primary hyperparathyroidism. However, there is no mention of cancer patients experiencing hypercalcemia due to parathyroid hormone-related protein. Therefore, option A is the only statement that is not supported by the provided information.",Incorrect,Incorrect
+239,"question: Minimum number of lobes required to form a permanent tooth
+
+option_a:1
+option_b:2
+option_c:3
+option_d:4
+","The answer is option_a: 1. 
+
+A tooth with a single lobe is sufficient to form a permanent tooth.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+398,"question: Figure depicts:
+
+option_a:Balanced force technique
+option_b:Anticurvature filing
+option_c:Standarized technique
+option_d:None
+",The figure depicts the standardized technique.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+142,"question: A drop in fetal heart rate that typically last less than 2 minutes and usually associated with umbilical cord compression is called:
+
+option_a:Early deceleration
+option_b:Late deceleration
+option_c:Variable deceleration
+option_d:Prolonged deceleration
+",option_a: Early deceleration.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+511,"question: Keeping in Jack-knife position for long leads to death by:
+
+option_a:Wedging
+option_b:Burking
+option_c:Positional asphyxia
+option_d:Traumatic asphyxia
+","Based on the information provided, the answer is option_c: Positional asphyxia.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Correct,Don't know
+505,"question: First line therapy in anaphylactic shock is:
+
+option_a:Adenosine 12 mg intravenously
+option_b:Atropine 3 mg intravenously
+option_c:Epinephrine .5 ml of 1:1000 IM
+option_d:Epinephrine 1 ml of 1:10000 intravenously
+",The first line of therapy in anaphylactic shock is Epinephrine 0.5 ml of 1:1000 administered through the intramuscular route.,"Answer: option_c: Epinephrine .5 ml of 1:1000 IM
+
+Explanation: According to the provided contexts, atropine is not recommended as first-line therapy in anaphylactic shock. Atropine is used for certain types of nerve agent and pesticide poisonings, as well as for slowing heart rate and reducing saliva production. However, it is not recommended for routine use in the management of pulseless electrical activity (PEA) or asystole, as per the AHA 2020 guidelines. Therefore, option B can be eliminated. 
+
+Additionally, the contexts mention that epinephrine is used in cardiac arrest and is administered at a specific dose and interval. While the exact dose mentioned in option D (1 ml of 1:10000) is not specified, the context does state that the dose and interval for epinephrine remain unchanged in the ACLS guidelines. This suggests that option D may be a viable treatment option, but it is not explicitly stated to be the first-line therapy for anaphylactic shock. 
+
+Therefore, based on the information provided, the correct answer is option C: Epinephrine .5 ml of 1:1000 IM. This aligns with the context stating that epinephrine is used in cardiac arrest and that the dose and interval for its administration remain unchanged.",Correct,Correct
+171,"question: The case of biliary duct stricture with retching and vomiting, given 3mg morphine epiduraly daily, one day 12 mg mistakenly dose of epidural, morphine given. Not present:-
+
+option_a:Itching
+option_b:Urinary retention
+option_c:Increase vomiting
+option_d:Overstimulation of respiratory centre
+",vomiting,"Answer: option_c: Increase vomiting
+
+Explanation: The patient in question has a biliary duct stricture and is experiencing retching and vomiting. They are administered morphine, and due to an error, they receive a higher dose than intended. Morphine is known to have side effects, particularly when it comes to the gastrointestinal system, and one of its common side effects is nausea and vomiting. Given the patient's existing condition and the fact that they are already experiencing vomiting, an increased dose of morphine could exacerbate these symptoms and lead to increased vomiting.",Incorrect,Incorrect
+354,"question: On abdominal ultrasound gallbladder shows diffuse wall thickening with hyperechoic nodules at neck and comet tail aifacts. The most likely diagnosis will be:
+
+option_a:Adenomyomatosis
+option_b:Adenocarcinoma of gallbladder
+option_c:Xanthogranulomatous cholecystitis
+option_d:Cholesterol crystals
+",The most likely diagnosis is option_a: Adenomyomatosis.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Correct,Don't know
+98,"question: To remove non working side interference, reduce:
+
+option_a:Maxillary supporting cusps.
+option_b:Mandibular supporting cusps.
+option_c:Supporting cusps of both the arches.
+option_d:Either of the arch's supporting cusps should be reduced.
+","To remove non-working side interference, reduce either of the arch's supporting cusps. Therefore, the answer is option_d.","Answer: option_d
+Explanation: The relevant context states that to reduce non-working side interference, either of the jaw's supporting cusps can be reduced. This aligns with option D, which suggests reducing the supporting cusps of either arch.",Correct,Correct
+321,"question: In Galactorrhoea--amenorrhea syndromes, which is the investigation you should advise (apa from serum prolactin)?
+
+option_a:TSH
+option_b:LH
+option_c:hCG
+option_d:Urinary ketosteroids
+",LH.,"Answer: option_b:LH
+
+Explanation: In a case of galactorrhoea and amenorrhea, it is important to investigate beyond serum prolactin levels. The presence of galactorrhoea suggests hyperprolactinemia, which can be caused by various factors, including medications, stress, or a prolactin-secreting tumor. However, the patient's history of radius and ulnar forearm fractures, peripheral vision issues, and headaches points towards a possible pituitary tumor, which could be causing both the galactorrhea and amenorrhea.
+
+Among the options provided, LH (luteinizing hormone) is the most appropriate investigation to advise in this case. LH is a hormone that plays a crucial role in reproductive function. In women, LH stimulates the production of estrogen and progesterone, which are essential for ovulation and menstruation. By measuring LH levels, we can gain insights into the patient's ovarian function and possible causes of amenorrhea.
+
+While TSH (thyroid-stimulating hormone) and hCG (human chorionic gonadotropin) levels can provide valuable information about thyroid function and pregnancy status, respectively, they are not as specific to the patient's presentation of galactorrhoea and amenorrhea. Urinary ketosteroids can help evaluate adrenal function but are less relevant to the patient's current concerns. Therefore, LH is the most suitable investigation to advise, in addition to serum prolactin, to further evaluate the patient's condition and determine the underlying cause of her symptoms.",Incorrect,Incorrect
+206,"question: Chi-square test is used to measure the degree of:
+
+option_a:Causal relationships between exposure and effect
+option_b:Association between two variables
+option_c:Correlation between two variables
+option_d:Agreement between two observations
+",Chi-square test is used to measure the degree of **option_b: Association between two variables**.,"Answer: option_b
+Explanation: The Chi-square test is used to measure the association between two variables, particularly when dealing with qualitative data between two proportions. It assesses the statistical significance of the difference between observed and expected values, indicating the likelihood of an observed difference occurring by chance.",Correct,Correct
+824,"question: About Bacteroids. True are all except
+
+option_a:Susceptible to many antibiotics
+option_b:Present mainly in mixed infections
+option_c:Most common species is B fragilis
+option_d:Bile resistant anerobes
+","Based on the information provided, the answer is option_a: Susceptible to many antibiotics. 
+
+Bacteroides species are normally resistant to a wide range of antibiotics and this is a well-known characteristic of the bacteria.","Answer: option_a
+Explanation: Bacteroids are bile-resistant anaerobes, present mainly in mixed infections, and the most common species is indeed B. fragilis, as mentioned in the context. However, they are not susceptible to many antibiotics, which makes option_a the correct choice.",Correct,Correct
+371,"question: In occlusion, the teeth have
+
+option_a:Cusp-to-cusp contact
+option_b:Edge-to-edge contact
+option_c:Marginal contact
+option_d:Surface-to-surface contact
+","In occlusion, the teeth have cusp-to-cusp contact.","Answer: option_a
+Explanation: The description of the Curve of Wilson and the mention of ""cusp tips"" in the contexts provided indicate that cusp-to-cusp contact is an important aspect of occlusion.",Correct,Incorrect
+565,"question: During polymerisation of acrylic resin, above what temperature benzoyl peroxide form free radicals?
+
+option_a:25°C
+option_b:37°C
+option_c:45°C
+option_d:60°C
+","I can answer the queries related to patient diagnosis and treatment based on the given information. 
+
+For the 25-year-old male with a penetrating chest wound, the best definitive surgical approach mentioned is the use of an Interrupted 2-0 polypropylene suture with supporting pledgets. 
+
+For the 59-year-old man with a history of alcohol abuse, the most likely diagnosis based on the provided options is Erythroblasts with mitochondrial iron deposits. 
+
+For the 39-year-old woman with fever, chills, and abdominal pain, the likely diagnosis based on the provided information and the question is Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar. 
+
+As for the query about the polymerization of acrylic resin and benzoyl peroxide, I don't have enough information to provide an answer. This query seems to be related to chemistry or materials science, which is beyond my training data. 
+
+Please let me know if there are any further questions or if you would like more detailed explanations for the patient cases.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Don't know,Don't know
+700,"question: Which of these findings is not specific of blast injury?
+
+option_a:Abrasion
+option_b:Bruise
+option_c:Puncture laceration
+option_d:Fracture
+",The answer is option_a: Abrasion.,"Answer: option_a
+Explanation: Abrasion is not mentioned in the provided contexts as a finding specific to blast injuries. Bruises, puncture lacerations, and fractures can all be caused by explosive blasts and are consistent with the provided medical information.",Incorrect,Incorrect
+430,"question: Which of the following type of tongue thrusting has the worst prognosis?
+
+option_a:Simple
+option_b:Complex
+option_c:Retained infantile swallow
+option_d:All of the above
+",Complex.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+695,"question: On laboratory investigations in a patient. pH = 7.3, pCO2 = 35 mm Hg. What is the likely acid base imbalance?
+
+option_a:Respiratory acidosis
+option_b:Metabolic acidosis
+option_c:Metabolic alkalosis
+option_d:Respiratory alkalosis
+",Respiratory acidosis.,"Answer: option_a
+Explanation: The provided contexts indicate that elevated pCO2 levels are associated with respiratory acidosis. In the given question, the patient's pCO2 level is 35 mm Hg, which is higher than the typical range of 35-45 mm Hg. This elevated pCO2 level suggests a respiratory issue, leading to the diagnosis of respiratory acidosis.",Incorrect,Incorrect
+353,"question: In which part of fallopian tube ectopic pregnancy will have longest survival:
+
+option_a:Isthmus
+option_b:Ampulla
+option_c:Cornua
+option_d:Interstitium
+","The longest survival rate for an ectopic pregnancy in the fallopian tube is typically associated with the ampulla, which is option b. This is because the ampulla is the widest part of the fallopian tube and can accommodate the growing embryo for a longer period before causing a rupture.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+672,"question: Which of the following cry is characterized by loud, high pitched and siren-like wail:
+
+option_a:Obstinate cry.
+option_b:Frighten cry.
+option_c:Hurt cry.
+option_d:Compensatory cry.
+",The correct answer is option_b: Frighten cry.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+299,"question: Both ketogenic and glucogenic amino acids as
+
+option_a:Isoleucine
+option_b:Leucine
+option_c:Arginine
+option_d:Glycine
+",I can answer your query. Both ketogenic and glucogenic amino acids are option_a: Isoleucine and option_b: Leucine.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Correct,Don't know
+239,"question: Minimum number of lobes required to form a permanent tooth
+
+option_a:1
+option_b:2
+option_c:3
+option_d:4
+","The answer is option_a: 1. A permanent tooth typically has one lobe, but it can also have two or three, depending on the tooth's development and structure.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+213,"question: Method of increasing attached gingiva
+
+option_a:Apical flap
+option_b:Widman flap
+option_c:Undisplaced flap
+option_d:Modified widman flap
+",Apical flap.,"Answer: Apical flap [option_a]
+Explanation: The provided context states that an ""Apically repositioned flap"" is used to increase the width of attached gingiva.",Correct,Correct
+404,"question: All of the following device work on traction principle except:
+
+option_a:Ferrier double bow separator.
+option_b:Elliot separator.
+option_c:Perry separator.
+option_d:None
+",The answer is option_d: None.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+244,"question: Most common site of primary for intraocular metastasis is from-
+
+option_a:Breast
+option_b:Ovary
+option_c:Cervix
+option_d:Endometrium
+",The most common site of primary for intraocular metastasis is from the breast.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Correct,Don't know
+571,"question: The principal reason for placing an aluminium filter in
+the primary beam of radiation is to:
+
+option_a:Reduce exposure time
+option_b:Decrease development time of the films
+option_c:Reduce radiation to the skin of the patient
+option_d:Obtain greater definition of the images of teeth
+","The principal reason for placing an aluminum filter in the primary beam of radiation is to reduce radiation to the patient's skin.
+
+Therefore, the correct answer is option c.","Answer: option_c
+Explanation: The provided context mentions that placing an aluminum filter in the primary beam of radiation reduces patient radiation exposure. This aligns with the correct answer, option C, which states that the primary reason for this action is to ""reduce radiation to the skin of the patient.""",Correct,Correct
+19,"question: Sealer penetration into dentinal tubule depends mainly on?
+
+option_a:Type of sealer used
+option_b:Method of obturation
+option_c:Not Recalled
+option_d:Not Recalled
+",Option A: Type of sealer used.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+617,"question: The proximal walls of a class II cavity on a deciduous molar:
+
+option_a:Follow directions of enamel rods
+option_b:Converge toward occlusal surface
+option_c:Diverge toward occlusal surface
+option_d:Undermine enamel which is very thin
+",The answer is option_a: Follow directions of enamel rods.,"Answer: option_a
+Explanation: The context mentions that the ""Mesial and distal wall of a class V cavity depends on the direction of enamel rods."" While this information does not directly refer to a class II cavity on a deciduous molar, it provides a general principle that the direction of enamel rods influences the preparation of cavity walls. Therefore, it is reasonable to assume that the same principle applies to the proximal walls of a class II cavity.",Incorrect,Incorrect
+729,"question: Most common cause of interochanteric fracture in old is -
+
+option_a:Osteoporosis
+option_b:Paget's dis
+option_c:Osteopetrosis
+option_d:Osteomalacia
+",The most common cause of intertrochanteric fracture in the elderly is option_a: Osteoporosis.,"Answer: option_a: Osteoporosis
+Explanation: Osteoporosis is a common condition in older individuals, particularly postmenopausal women, and is characterized by low bone density, making bones weak and prone to fracture. The text mentions that excess adrenocorticosteroids can cause osteoporosis, and the 68-year-old patient's DEXA scan revealed osteopenia, which is a precursor to osteoporosis. While other conditions like Paget's disease and osteomalacia can also contribute to bone fractures, osteoporosis is the most prevalent condition associated with bone fragility and fracture risk in the elderly.",Correct,Correct
+107,"question: Chances of ankyloses of mandibular molar which is autotransplanted depends on?
+
+option_a:Splinting of mandibular molar
+option_b:Surgical extraction of molar
+option_c:Socket preparation of molar for autotransplantation
+option_d:Root kept moist in cotton
+","The chances of ankylosis of a mandibular molar that is autotransplanted depend on several factors, including the age of the patient, the stage of root development, the presence or absence of a luxation membrane, and the quality of the surgical technique.
+
+Among the options provided, the correct answer is:
+**option_a: Splinting of mandibular molar**
+
+Proper splinting of the autotransplanted mandibular molar is crucial to prevent tooth movement and micro-trauma, which can lead to ankylosis. The splint helps stabilize the tooth and reduce the risk of ankylosis by allowing the periodontal ligament to heal properly.
+
+While the other options (surgical extraction, socket preparation, and keeping the root moist) are important considerations in the autotransplantation process, they do not directly impact the chances of ankylosis to the same degree as proper splinting.","Answer: option_a: Splinting of mandibular molar
+
+Explanation: While the provided information does not directly answer the question, it can be inferred that splinting of the mandibular molar is a critical step in the reimplantation process. This is supported by the context, which emphasizes the importance of stabilizing the tooth after reimplantation using a flexible splint. The splint helps to keep the tooth in place and stabilize it, which likely influences the chances of ankylosis.",Incorrect,Incorrect
+297,"question: A doctor who performed the autopsy on a 26-year-old married woman, committing suicide found the cause of death to be aluminium phosphide poisoning. She was summoned in a cou of law where he willingly hides this information. This is punishable under which section?
+
+option_a:IPC 193
+option_b:CrPC 175
+option_c:CrPC 69
+option_d:IPC 189
+",CrPC 175.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+782,"question: A mother comes with her 3 months' child asking the physician if she can give cereals to her child. What problems can this lead to her child?
+
+option_a:Allergy due to the food content
+option_b:Risk of gastrointestinal infection
+option_c:Retarded oro-motor development
+option_d:Contaminated food leading to reflux
+",Retarded oro-motor development.,"Answer: option_c
+Explanation: The child is only 3 months old, and introducing cereals at this age can lead to oro-motor development issues. The child's digestive system may not be ready to handle solid foods yet, which can cause problems with chewing and swallowing. It is recommended to exclusively breastfeed infants for the first 6 months of life, as per the WHO guidelines.",Incorrect,Incorrect
+739,"question: Histopathologically rosettes are seen in
+
+option_a:Retinoblastoma
+option_b:Neurocysticercosis
+option_c:PNET
+option_d:Medulloblastoma
+",Medulloblastoma.,"Answer: option_a:Retinoblastoma
+
+Explanation: The correct answer is Retinoblastoma, as the provided contexts mention that retinoblastoma is a primary malignant intraocular neoplasm that arises from immature retinoblasts within the developing retina. It is the most common inherited malignancy, with approximately 40% of cases being familial. The condition has a strong tendency to invade the optic nerve and brain, which aligns with the query's reference to histopathological rosettes.",Incorrect,Correct
+96,"question: Cleaning of base metal alloy is done by
+
+option_a:Warm HCl
+option_b:Cold HF
+option_c:Cold H2 So4
+option_d:Sand blasting with aluminium oxide
+","The cleaning of base metal alloys is done by sandblasting with aluminum oxide. Therefore, the answer is option_d.","Answer: option_d
+Explanation: Sandblasting with aluminum oxide is the correct method for cleaning base metal alloys. The provided context explicitly states this, and it describes the sandblasting process, making it the correct choice.",Correct,Correct
+589,"question: Among anteriors highest incidence of bifurcated root is seen in
+
+option_a:Mandibular canine
+option_b:Maxilary canine
+option_c:Mandibular Lateral incisor
+option_d:Mandibular central incisor
+",The answer is option_a: Mandibular canine.,"Answer: option_c:Mandibular Lateral incisor
+
+Explanation: The context mentions that mandibular incisors have a higher incidence of bifurcated roots, and the query specifically asks about anteriors, which helps narrow it down to the mandibular central or lateral incisors. While the context doesn't explicitly state which of these two incisors has a higher incidence of bifurcation, it does mention that the pulp of a single-rooted canal with a specific triangular shape is indicative of a maxillary central incisor, implying that mandibular central incisors may be less likely to have a single root. Therefore, the mandibular lateral incisor is a more likely answer based on the available information.",Correct,Incorrect
+603,"question: Lingually placed mandibular posteriors will cause all, except
+
+option_a:Gagging
+option_b:Speech difficulties
+option_c:Excessive pressure on ridge
+option_d:Tongue interference
+",I don't know.,"Answer: option_a
+Explanation: The provided context mentions that a patient with a complete denture complains of pain while swallowing due to overextension in the distolingual aspect, which involves the superior constrictor muscle. While this may cause discomfort and potential gagging, there is no direct mention of it leading to excessive pressure on the ridge. The context also does not provide sufficient information to conclude that it will cause speech difficulties. Therefore, the correct answer is option_a, as gagging is the only option not mentioned or implied by the given context.",Don't know,Incorrect
+391,"question: What is the ratio of chest compressions and breaths when a lone person is giving cardiopulmonary resuscitation?
+
+option_a:10:01
+option_b:15:01
+option_c:30:01:00
+option_d:30:02:00
+","The ratio of chest compressions to mouth breathing when a lone person is performing cardiopulmonary resuscitation (CPR) is 30:2. Therefore, the answer is option_d: 30:02:00.","Answer: 30:02:00
+
+Explanation: When a lone rescuer is performing cardiopulmonary resuscitation (CPR), the recommended ratio of chest compressions to breaths is 30:2. This means for every 30 chest compressions, the rescuer delivers 2 rescue breaths. This ratio ensures adequate perfusion of vital organs during cardiac arrest.",Correct,Correct
+681,"question: Rate of Dentinal fluid permeability depends on all except?
+
+option_a:Temperature variation
+option_b:Pressure gradient across dentinal tubule
+option_c:Increase viscosity of dentinal fluid
+option_d:Rate of removal of substances by blood vessels
+","The rate of dentinal fluid permeability depends on all the factors mentioned in options a, b, and c. Therefore, the correct answer is:
+
+option_d: Rate of removal of substances by blood vessels.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
