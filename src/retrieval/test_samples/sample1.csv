@@ -1,0 +1,194 @@
+,question,answer,answer_index,opa,opb,opc,opd,generated_explanation,mod_question,query,benchmark_responses,hubs_responses,hubs_rank,bench_rank
+621,Exact number of weeks between last menstrual period and expected date of delivery :March 2005,40 weeks,opc,38 weeks,39 weeks,40 weeks,41 weeks,"Exact number of weeks between last menstrual period and expected date of delivery :March 2005 40 weeks. Here is an additional explanation: Ans. C: 40 weeksChildbih usually occurs about 38 weeks after conception; i.e., approximately 40 weeks from the last normal menstrual period (LNMP).The World Health Organization defines normal term for delivery as between 37 weeks and 42 weeksEDD is calculated by Naegele's ruleAdd 7 days to the first day of the last period and subtract 3 monthsNaegele's rule is based on 28 days regular cycle.If the cycle is shoer or longer than 28 days, EDD will be corrected and written as corrected EDD.Examples:40 days cycle regularly, to get corrected EDD, add 12 days (40-28) with the EDD calculated from LMP.21 days cycle regularly, to get corrected EDD, subtract 7 days (28-21) with the EDD calculated from LMP.","For the given question, choose the correct answer from the options_list.
+
+question: Exact number of weeks between last menstrual period and expected date of delivery :March 2005
+
+options_list: [option_a:38 weeks
+option_b:39 weeks
+,option_c:40 weeks
+option_d:41 weeks]
+","question: Exact number of weeks between last menstrual period and expected date of delivery :March 2005
+
+option_a:38 weeks
+option_b:39 weeks
+option_c:40 weeks
+option_d:41 weeks
+",I don't know. The query does not seem to be related to the provided contexts.,"option_c: 40 weeks. 
+
+A normal, full-term pregnancy typically lasts about 40 weeks from the first day of the last menstrual period to the expected date of delivery.",Correct,Don't know
+579,Deciduous teeth do not show fluorosis because:,All of the above,opd,Placenta acts as a barrier,Fluoride is taken up by the fast growing skeletal tissue,The calcification time of deciduous teeth is less,All of the above,"Deciduous teeth do not show fluorosis because: All of the above. Here is an additional explanation: Option 1: Placenta acts as a barrier.
+Some authors have said that the placenta acts as a complete barrier to fluoride, others have said that it is only partial. Some have said that the placenta only acts as a barrier, when there is a sudden increase in the maternal plasma fluoride level.
+Option 2: Fluoride is taken up by the fast-growing skeletal tissue.
+Fluoride’s actions on bone cells predominate as anabolic effects both in vitro and in vivo. More recently, fluoride has been shown to induce osteoclastogenesis.
+Option 3: The calciﬁcation time of deciduous teeth is less.","For the given question, choose the correct answer from the options_list.
+
+question: Deciduous teeth do not show fluorosis because:
+
+options_list: [option_a:Placenta acts as a barrier
+option_b:Fluoride is taken up by the fast growing skeletal tissue
+,option_c:The calcification time of deciduous teeth is less
+option_d:All of the above]
+","question: Deciduous teeth do not show fluorosis because:
+
+option_a:Placenta acts as a barrier
+option_b:Fluoride is taken up by the fast growing skeletal tissue
+option_c:The calcification time of deciduous teeth is less
+option_d:All of the above
+",Deciduous teeth do not show fluorosis because option c: The calcification time of deciduous teeth is less.,"Deciduous teeth do not show fluorosis because: **option_d: All of the above**. 
+
+The placenta acts as a barrier, preventing the transfer of most substances, including fluoride, to the developing fetus. Fluoride is preferentially taken up by the fast-growing skeletal tissue, leaving less to impact the developing deciduous teeth. Additionally, the shorter calcification time of deciduous teeth compared to permanent teeth means there is a reduced window for fluorosis to occur.",Correct,Incorrect
+653,Location of MB2 in maxillary first molar,Mesiopalatal to MB1,opd,Distopalatal to MB1,Mesiobuccal to MB1,Distobuccal to MB1,Mesiopalatal to MB1,Location of MB2 in maxillary first molar Mesiopalatal to MB1. ,"For the given question, choose the correct answer from the options_list.
+
+question: Location of MB2 in maxillary first molar
+
+options_list: [option_a:Distopalatal to MB1
+option_b:Mesiobuccal to MB1
+,option_c:Distobuccal to MB1
+option_d:Mesiopalatal to MB1]
+","question: Location of MB2 in maxillary first molar
+
+option_a:Distopalatal to MB1
+option_b:Mesiobuccal to MB1
+option_c:Distobuccal to MB1
+option_d:Mesiopalatal to MB1
+",I don't know.,"The answer is option_a: Distopalatal to MB1. 
+
+The MB2 (Mesiobuccal 2) canal in a maxillary first molar is typically located distopalatal to the MB1 (Mesiobuccal 1) canal. This is due to the complex anatomy of the mesiobuccal root, which often houses two canals in this tooth. The MB2 canal is often more challenging to locate and negotiate compared to the MB1 canal. It is important to thoroughly explore the mesiobuccal root during endodontic treatment to ensure all canals are identified and treated appropriately.",Incorrect,Don't know
+682,Occulomotor nerve passes through,Superior orbital fissure,opb,Foramen rotundum,Superior orbital fissure,Inferior orbital fissure,Foramen ovale,Occulomotor nerve passes through Superior orbital fissure. ,"For the given question, choose the correct answer from the options_list.
+
+question: Occulomotor nerve passes through
+
+options_list: [option_a:Foramen rotundum
+option_b:Superior orbital fissure
+,option_c:Inferior orbital fissure
+option_d:Foramen ovale]
+","question: Occulomotor nerve passes through
+
+option_a:Foramen rotundum
+option_b:Superior orbital fissure
+option_c:Inferior orbital fissure
+option_d:Foramen ovale
+",The answer is c) Inferior orbital fissure.,"The correct answer is **option_b: Superior orbital fissure**. 
+
+The context provided states that a patient with a metal rod inserted into the superior orbital fissure experienced damage to the oculomotor and ophthalmic nerves. This indicates that the oculomotor nerve passes through the superior orbital fissure. 
+
+Additional Explanation:
+The superior orbital fissure is a space in the skull located between the lesser and greater wings of the sphenoid bone, within the orbital cavity. It serves as a passageway for several important structures, including the oculomotor nerve, which is responsible for controlling the movements of the eye muscles, as well as providing sensory and parasympathetic innervation to the eye.",Correct,Incorrect
+88,Mid palatal split following Le-Fort 1 osteotomy is done by moving the maxilla in which direction?,Transverse,opd,Superior,Inferior,Antero-posterior,Transverse,Mid palatal split following Le-Fort 1 osteotomy is done by moving the maxilla in which direction? Transverse. ,"For the given question, choose the correct answer from the options_list.
+
+question: Mid palatal split following Le-Fort 1 osteotomy is done by moving the maxilla in which direction?
+
+options_list: [option_a:Superior
+option_b:Inferior
+,option_c:Antero-posterior
+option_d:Transverse]
+","question: Mid palatal split following Le-Fort 1 osteotomy is done by moving the maxilla in which direction?
+
+option_a:Superior
+option_b:Inferior
+option_c:Antero-posterior
+option_d:Transverse
+",The answer is option_b:Inferior.,"**Answer: Option B: Inferior**
+
+Explanation: Le-Fort 1 osteotomy involves cutting the maxilla down and away from the face (inferiorly), while a mid-palatal split further separates the maxilla along the midline. This combined procedure allows for movement of the maxilla in the inferior direction, providing access to the nasal cavity and sinuses for surgical correction or reconstruction.",Incorrect,Incorrect
+236,Lacrimation is affected due to damage to which of the following nerves?,Greater petrosal nerve,opb,Nasociliary nerve,Greater petrosal nerve,Trigeminal nerve,Anterior ethmoid nerve,"Lacrimation is affected due to damage to which of the following nerves? Greater petrosal nerve. Here is an additional explanation: Answer- B (Greater petrosal nerve)The greater petrosal nerve is a branch of the facial nerve. It gives secretomotor fibers to the pterygopalatine ganglion along with lesser petrosal nerve. The postganglionic fibers innervate the lacrimal gland and are responsible for the formation of tears.Greater petrosal nerve damage will deprive the lacrimal gland of its secretomotor fibers and this would lead to the absence of tears.Greater petrosal nerve damage can happen in case of intrapetrosal mass lesions, a trauma in case of temporal bone injuries, etc.","For the given question, choose the correct answer from the options_list.
+
+question: Lacrimation is affected due to damage to which of the following nerves?
+
+options_list: [option_a:Nasociliary nerve
+option_b:Greater petrosal nerve
+,option_c:Trigeminal nerve
+option_d:Anterior ethmoid nerve]
+","question: Lacrimation is affected due to damage to which of the following nerves?
+
+option_a:Nasociliary nerve
+option_b:Greater petrosal nerve
+option_c:Trigeminal nerve
+option_d:Anterior ethmoid nerve
+","The correct answer is option_a: Nasociliary nerve.
+
+The nasociliary nerve is a branch of the ophthalmic nerve (one of the three divisions of the trigeminal nerve), and it supplies the lacrimal gland, which produces tears. Damage to the nasociliary nerve can affect lacrimation (tear production and secretion).","**Option A: Nasociliary nerve**
+
+The nasociliary nerve is a branch of the ophthalmic nerve, which is one of the three divisions of the trigeminal nerve (CN V). The trigeminal nerve is indeed mentioned in the context, but not in relation to lacrimation. However, it is important to understand the structure and functions of the trigeminal nerve to identify its role in lacrimation.
+
+Now, let's understand why the correct answer is the nasociliary nerve:
+
+The trigeminal nerve (CN V) has three main branches: the ophthalmic nerve, the maxillary nerve, and the mandibular nerve. The ophthalmic nerve has several branches, including the nasociliary nerve, which provides sensory innervation to the nasal cavity, ethmoid air sinuses, and the skin of the lower half of the nose and upper lip. Importantly, the nasociliary nerve also carries postganglionic parasympathetic fibers that are derived from the facial nerve (CN VII) via the ciliary ganglion. These parasympathetic fibers are responsible for lacrimation, or tear production, by stimulating the lacrimal gland.
+
+So, if there is damage to the nasociliary nerve, lacrimation would be affected because the nerve no longer carries the parasympathetic signals to the lacrimal gland for tear production.
+
+While the other options are all related to the nervous system, they are not directly involved in lacrimation:
+- Greater petrosal nerve (option B): This nerve is involved in supplying parasympathetic innervation to the lacrimal nerve, which then carries these fibers to the lacrimal gland for tear production. However, the question specifically asks about direct damage to a nerve affecting lacrimation, and the nasociliary nerve is the direct link in this case.
+- Trigeminal nerve (option C): While the trigeminal nerve is important for sensory and motor functions in the head and face, it is not directly responsible for lacrimation. The trigeminal nerve itself does not carry parasympathetic fibers for tear production.
+- Anterior ethmoid nerve (option D): This nerve is a branch of the nasal branch of the ophthalmic nerve. It provides sensory innervation to the ethmoid air sinuses and the nasal mucosa. It is not directly involved in lacrimation.",Incorrect,Incorrect
+597,Tooth brush abrasions are more common on the,"Maxillary teeth, on the left half of the arch",opd,"Mandibular teeth, on the right half of the arch","Mandibular teeth, on the left half of the arch","Maxillary teeth, on the right half of the arch","Maxillary teeth, on the left half of the arch","Tooth brush abrasions are more common on the Maxillary teeth, on the left half of the arch. ","For the given question, choose the correct answer from the options_list.
+
+question: Tooth brush abrasions are more common on the
+
+options_list: [option_a:Mandibular teeth, on the right half of the arch
+option_b:Mandibular teeth, on the left half of the arch
+,option_c:Maxillary teeth, on the right half of the arch
+option_d:Maxillary teeth, on the left half of the arch]
+","question: Tooth brush abrasions are more common on the
+
+option_a:Mandibular teeth, on the right half of the arch
+option_b:Mandibular teeth, on the left half of the arch
+option_c:Maxillary teeth, on the right half of the arch
+option_d:Maxillary teeth, on the left half of the arch
+","Tooth brush abrasions are most commonly found on the maxillary teeth, specifically on the left half of the arch (option d). This is due to the fact that most people are right-handed and tend to apply more force when brushing the left side of the maxillary arch. The correct answer is option D.","answer: Maxillary teeth, on the left half of the arch.",Correct,Correct
+614,Hardness of stone surface is affected by?,Hydrocolloid impression material,opc,Impression wax,Impression compound,Hydrocolloid impression material,Rubber based material,"Hardness of stone surface is affected by? Hydrocolloid impression material. Here is an additional explanation: Colloidal systems such as agar and alginate retard the setting of gypsum products. If these materials are in contact with CaSO4·½H2O during setting, a soft, easily abraded surface is obtained. Accelerators such as potassium sulfate are added to improve the surface quality of the set CaSO4·2H2O against agar or alginate.
+These colloids do not retard the setting by altering the solubility ratio of the hemihydrate and dihydrate forms, but rather by being adsorbed on the hemihydrate and dihydrate nucleation sites, thus interfering in the hydration reaction. The adsorption of these materials on the nucleating sites retards the setting reaction more effectively than adsorption on the calcium sulfate hemihydrate.
+Craig’s RESTORATIVE DENTAL MATERIALS E 14th P: 255","For the given question, choose the correct answer from the options_list.
+
+question: Hardness of stone surface is affected by?
+
+options_list: [option_a:Impression wax
+option_b:Impression compound
+,option_c:Hydrocolloid impression material
+option_d:Rubber based material]
+","question: Hardness of stone surface is affected by?
+
+option_a:Impression wax
+option_b:Impression compound
+option_c:Hydrocolloid impression material
+option_d:Rubber based material
+",The hardness of a stone surface is affected by rubber-based material.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Don't know,Incorrect
+127,Initial clicking of TMJ while opening is due to,Retruded condyle in respect to articular disc,opb,Protruded condyle in respect to articular disc,Retruded condyle in respect to articular disc,Perforated disc,Lateral displacement of the condyle,Initial clicking of TMJ while opening is due to Retruded condyle in respect to articular disc. ,"For the given question, choose the correct answer from the options_list.
+
+question: Initial clicking of TMJ while opening is due to
+
+options_list: [option_a:Protruded condyle in respect to articular disc
+option_b:Retruded condyle in respect to articular disc
+,option_c:Perforated disc
+option_d:Lateral displacement of the condyle]
+","question: Initial clicking of TMJ while opening is due to
+
+option_a:Protruded condyle in respect to articular disc
+option_b:Retruded condyle in respect to articular disc
+option_c:Perforated disc
+option_d:Lateral displacement of the condyle
+",The initial clicking of TMJ while opening is due to a protruded condyle in respect to the articular disc.,"**Option A: Protruded condyle in respect to articular disc** is the correct answer. 
+
+The initial clicking sound in TMJ (Temporomandibular Joint) disorders is often associated with the displacement of the articular disc, which is a result of a protruded condyle. This occurs when the condyle moves forward and the articular disc is unable to maintain its normal position, leading to a temporary displacement and the characteristic clicking sound. 
+
+The provided context mentions the role of the lateral pterygoid muscle in controlling the position and movement of the articular disc. A medial dislocation of a fractured condyle can also be caused by this muscle, further highlighting its importance in TMJ function. 
+
+While the other options may be related to TMJ disorders or dysfunction, they do not directly explain the initial clicking sound.",Incorrect,Incorrect
+635,Lipoarabinomannan (LAM) assay in urine is used for screening of?,Mycobacterium tuberculosis,opa,Mycobacterium tuberculosis,Pneumocystis jirovecii,Histoplasm capsulatum,Cryptococcus neoformans,Lipoarabinomannan (LAM) assay in urine is used for screening of? Mycobacterium tuberculosis. Here is an additional explanation: Lipoarabinomannan (LAM) is a virulence factor for Mycobacterium tuberculosis. It prevents phagolysosomal fusion. It is secreted in urine so can be used for screening purposes.,"For the given question, choose the correct answer from the options_list.
+
+question: Lipoarabinomannan (LAM) assay in urine is used for screening of?
+
+options_list: [option_a:Mycobacterium tuberculosis
+option_b:Pneumocystis jirovecii
+,option_c:Histoplasm capsulatum
+option_d:Cryptococcus neoformans]
+","question: Lipoarabinomannan (LAM) assay in urine is used for screening of?
+
+option_a:Mycobacterium tuberculosis
+option_b:Pneumocystis jirovecii
+option_c:Histoplasm capsulatum
+option_d:Cryptococcus neoformans
+",Lipoarabinomannan (LAM) assay in urine is used for screening of Mycobacterium tuberculosis.,"option_a: Mycobacterium tuberculosis. 
+
+Here is an additional explanation: The Lipoarabinomannan (LAM) assay is a diagnostic test used specifically for the detection of Mycobacterium tuberculosis, the causative agent of tuberculosis. This test utilizes urine samples to screen for the presence of LAM, a major component of the cell wall in mycobacteria. A positive result indicates the likelihood of Mycobacterium tuberculosis infection, aiding in the diagnosis and subsequent management of this infectious disease.",Correct,Correct

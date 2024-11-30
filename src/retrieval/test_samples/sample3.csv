@@ -1,0 +1,186 @@
+,question,answer,answer_index,opa,opb,opc,opd,generated_explanation,mod_question,query,benchmark_responses,hubs_responses,bench_rank,hubs_rank
+354,On abdominal ultrasound gallbladder shows diffuse wall thickening with hyperechoic nodules at neck and comet tail aifacts. The most likely diagnosis will be:,Adenomyomatosis,opa,Adenomyomatosis,Adenocarcinoma of gallbladder,Xanthogranulomatous cholecystitis,Cholesterol crystals,"On abdominal ultrasound gallbladder shows diffuse wall thickening with hyperechoic nodules at neck and comet tail aifacts. The most likely diagnosis will be: Adenomyomatosis. Here is an additional explanation: Ans.A. AdenomyomatosisAdenomyomatosis is a benign condition characterized by hyperplastic changes of unknown etiology involving the GB wall.It causes overgrowth of the mucosa, thickening of muscular wall, and formation of intramural diveicula or sinus tracts termed as Aschoff-Rokitansky sinuses.Investigations-USG- The presence of cholesterol crystals in these sinuses can result in ""diamond ring sign"", ""V-shaped"", or ""comet-tail"" aifacts on USG.Treatment- Cholecystectomy is indicated in symptomatic adenomyomatosis or when cholelithiasis is present.","For the given question, choose the correct answer from the options_list.
+
+question: On abdominal ultrasound gallbladder shows diffuse wall thickening with hyperechoic nodules at neck and comet tail aifacts. The most likely diagnosis will be:
+
+options_list: [option_a:Adenomyomatosis
+option_b:Adenocarcinoma of gallbladder
+,option_c:Xanthogranulomatous cholecystitis
+option_d:Cholesterol crystals]
+","question: On abdominal ultrasound gallbladder shows diffuse wall thickening with hyperechoic nodules at neck and comet tail aifacts. The most likely diagnosis will be:
+
+option_a:Adenomyomatosis
+option_b:Adenocarcinoma of gallbladder
+option_c:Xanthogranulomatous cholecystitis
+option_d:Cholesterol crystals
+",The most likely diagnosis is option_a: Adenomyomatosis.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Correct,Don't know
+98,"To remove non working side interference, reduce:",Either of the arch's supporting cusps should be reduced.,opd,Maxillary supporting cusps.,Mandibular supporting cusps.,Supporting cusps of both the arches.,Either of the arch's supporting cusps should be reduced.,"To remove non working side interference, reduce: Either of the arch's supporting cusps should be reduced.. ","For the given question, choose the correct answer from the options_list.
+
+question: To remove non working side interference, reduce:
+
+options_list: [option_a:Maxillary supporting cusps.
+option_b:Mandibular supporting cusps.
+,option_c:Supporting cusps of both the arches.
+option_d:Either of the arch's supporting cusps should be reduced.]
+","question: To remove non working side interference, reduce:
+
+option_a:Maxillary supporting cusps.
+option_b:Mandibular supporting cusps.
+option_c:Supporting cusps of both the arches.
+option_d:Either of the arch's supporting cusps should be reduced.
+","To remove non-working side interference, reduce either of the arch's supporting cusps. Therefore, the answer is option_d.","Answer: option_d
+Explanation: The relevant context states that to reduce non-working side interference, either of the jaw's supporting cusps can be reduced. This aligns with option D, which suggests reducing the supporting cusps of either arch.",Correct,Correct
+321,"In Galactorrhoea--amenorrhea syndromes, which is the investigation you should advise (apa from serum prolactin)?",TSH,opa,TSH,LH,hCG,Urinary ketosteroids,"In Galactorrhoea--amenorrhea syndromes, which is the investigation you should advise (apa from serum prolactin)? TSH. Here is an additional explanation: Ans: A. TSH(Ref Harrison I9/e p2 p2267)Galactorrhea - amenorrhea syndromes:Serum prolactin &TSH advised.Laboratory diagnosis:Measure basal, fasting morning PRL levels - To assess hypersecretion.Normal PRL levels <20 ,ug/L.Markedly elevated PRL levels (>1000 ,ug/L) -Falsely lowered.Due to assay aifacts & aggregated circulating PRL forms.Sample dilution required for accurate measurement.Usually biologically inactive (macroprolactinemia).Measuring TSH and T4 levels - To exclude hypothyroidism.","For the given question, choose the correct answer from the options_list.
+
+question: In Galactorrhoea--amenorrhea syndromes, which is the investigation you should advise (apa from serum prolactin)?
+
+options_list: [option_a:TSH
+option_b:LH
+,option_c:hCG
+option_d:Urinary ketosteroids]
+","question: In Galactorrhoea--amenorrhea syndromes, which is the investigation you should advise (apa from serum prolactin)?
+
+option_a:TSH
+option_b:LH
+option_c:hCG
+option_d:Urinary ketosteroids
+",LH.,"Answer: option_b:LH
+
+Explanation: In a case of galactorrhoea and amenorrhea, it is important to investigate beyond serum prolactin levels. The presence of galactorrhoea suggests hyperprolactinemia, which can be caused by various factors, including medications, stress, or a prolactin-secreting tumor. However, the patient's history of radius and ulnar forearm fractures, peripheral vision issues, and headaches points towards a possible pituitary tumor, which could be causing both the galactorrhea and amenorrhea.
+
+Among the options provided, LH (luteinizing hormone) is the most appropriate investigation to advise in this case. LH is a hormone that plays a crucial role in reproductive function. In women, LH stimulates the production of estrogen and progesterone, which are essential for ovulation and menstruation. By measuring LH levels, we can gain insights into the patient's ovarian function and possible causes of amenorrhea.
+
+While TSH (thyroid-stimulating hormone) and hCG (human chorionic gonadotropin) levels can provide valuable information about thyroid function and pregnancy status, respectively, they are not as specific to the patient's presentation of galactorrhoea and amenorrhea. Urinary ketosteroids can help evaluate adrenal function but are less relevant to the patient's current concerns. Therefore, LH is the most suitable investigation to advise, in addition to serum prolactin, to further evaluate the patient's condition and determine the underlying cause of her symptoms.",Incorrect,Incorrect
+206,Chi-square test is used to measure the degree of:,Association between two variables,opb,Causal relationships between exposure and effect,Association between two variables,Correlation between two variables,Agreement between two observations,Chi-square test is used to measure the degree of: Association between two variables. ,"For the given question, choose the correct answer from the options_list.
+
+question: Chi-square test is used to measure the degree of:
+
+options_list: [option_a:Causal relationships between exposure and effect
+option_b:Association between two variables
+,option_c:Correlation between two variables
+option_d:Agreement between two observations]
+","question: Chi-square test is used to measure the degree of:
+
+option_a:Causal relationships between exposure and effect
+option_b:Association between two variables
+option_c:Correlation between two variables
+option_d:Agreement between two observations
+",Chi-square test is used to measure the degree of **option_b: Association between two variables**.,"Answer: option_b
+Explanation: The Chi-square test is used to measure the association between two variables, particularly when dealing with qualitative data between two proportions. It assesses the statistical significance of the difference between observed and expected values, indicating the likelihood of an observed difference occurring by chance.",Correct,Correct
+824,About Bacteroids. True are all except,Susceptible to many antibiotics,opa,Susceptible to many antibiotics,Present mainly in mixed infections,Most common species is B fragilis,Bile resistant anerobes,About Bacteroids. True are all except Susceptible to many antibiotics. ,"For the given question, choose the correct answer from the options_list.
+
+question: About Bacteroids. True are all except
+
+options_list: [option_a:Susceptible to many antibiotics
+option_b:Present mainly in mixed infections
+,option_c:Most common species is B fragilis
+option_d:Bile resistant anerobes]
+","question: About Bacteroids. True are all except
+
+option_a:Susceptible to many antibiotics
+option_b:Present mainly in mixed infections
+option_c:Most common species is B fragilis
+option_d:Bile resistant anerobes
+","Based on the information provided, the answer is option_a: Susceptible to many antibiotics. 
+
+Bacteroides species are normally resistant to a wide range of antibiotics and this is a well-known characteristic of the bacteria.","Answer: option_a
+Explanation: Bacteroids are bile-resistant anaerobes, present mainly in mixed infections, and the most common species is indeed B. fragilis, as mentioned in the context. However, they are not susceptible to many antibiotics, which makes option_a the correct choice.",Correct,Correct
+371,"In occlusion, the teeth have",Surface-to-surface contact,opd,Cusp-to-cusp contact,Edge-to-edge contact,Marginal contact,Surface-to-surface contact,"In occlusion, the teeth have Surface-to-surface contact. ","For the given question, choose the correct answer from the options_list.
+
+question: In occlusion, the teeth have
+
+options_list: [option_a:Cusp-to-cusp contact
+option_b:Edge-to-edge contact
+,option_c:Marginal contact
+option_d:Surface-to-surface contact]
+","question: In occlusion, the teeth have
+
+option_a:Cusp-to-cusp contact
+option_b:Edge-to-edge contact
+option_c:Marginal contact
+option_d:Surface-to-surface contact
+","In occlusion, the teeth have cusp-to-cusp contact.","Answer: option_a
+Explanation: The description of the Curve of Wilson and the mention of ""cusp tips"" in the contexts provided indicate that cusp-to-cusp contact is an important aspect of occlusion.",Correct,Incorrect
+565,"During polymerisation of acrylic resin, above what temperature benzoyl peroxide form free radicals?",60°C,opd,25°C,37°C,45°C,60°C,"During polymerisation of acrylic resin, above what temperature benzoyl peroxide form free radicals? 60°C. Here is an additional explanation: The most commonly employed initiator is benzoyl peroxide, which is activated rapidly between 50°C and 100°C to release two free radicals per benzoyl peroxide molecule.
+Reference: PHILLIPS’ SCIENCE OF DENTAL MATERIALS, 12th ed page no 101","For the given question, choose the correct answer from the options_list.
+
+question: During polymerisation of acrylic resin, above what temperature benzoyl peroxide form free radicals?
+
+options_list: [option_a:25°C
+option_b:37°C
+,option_c:45°C
+option_d:60°C]
+","question: During polymerisation of acrylic resin, above what temperature benzoyl peroxide form free radicals?
+
+option_a:25°C
+option_b:37°C
+option_c:45°C
+option_d:60°C
+","I can answer the queries related to patient diagnosis and treatment based on the given information. 
+
+For the 25-year-old male with a penetrating chest wound, the best definitive surgical approach mentioned is the use of an Interrupted 2-0 polypropylene suture with supporting pledgets. 
+
+For the 59-year-old man with a history of alcohol abuse, the most likely diagnosis based on the provided options is Erythroblasts with mitochondrial iron deposits. 
+
+For the 39-year-old woman with fever, chills, and abdominal pain, the likely diagnosis based on the provided information and the question is Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar. 
+
+As for the query about the polymerization of acrylic resin and benzoyl peroxide, I don't have enough information to provide an answer. This query seems to be related to chemistry or materials science, which is beyond my training data. 
+
+Please let me know if there are any further questions or if you would like more detailed explanations for the patient cases.","Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Don't know,Don't know
+700,Which of these findings is not specific of blast injury?,Fracture,opd,Abrasion,Bruise,Puncture laceration,Fracture,"Which of these findings is not specific of blast injury? Fracture. Here is an additional explanation: Ans: D. Fracture(Ref: Reddy 34/e 1)225-227, 33/e p239-240; Parikh 6/e p4.183; Sabiston 19/e p6I2-613; Bailey 26/e p430 25/e p422-423)Fracture is not specific of blast injury.Marshall's triad:Diagnostic of explosive injury.Includes bruises, abrasions & puncture lacerations.","For the given question, choose the correct answer from the options_list.
+
+question: Which of these findings is not specific of blast injury?
+
+options_list: [option_a:Abrasion
+option_b:Bruise
+,option_c:Puncture laceration
+option_d:Fracture]
+","question: Which of these findings is not specific of blast injury?
+
+option_a:Abrasion
+option_b:Bruise
+option_c:Puncture laceration
+option_d:Fracture
+",The answer is option_a: Abrasion.,"Answer: option_a
+Explanation: Abrasion is not mentioned in the provided contexts as a finding specific to blast injuries. Bruises, puncture lacerations, and fractures can all be caused by explosive blasts and are consistent with the provided medical information.",Incorrect,Incorrect
+430,Which of the following type of tongue thrusting has the worst prognosis?,Retained infantile swallow,opc,Simple,Complex,Retained infantile swallow,All of the above,"Which of the following type of tongue thrusting has the worst prognosis? Retained infantile swallow. Here is an additional explanation: Tongue thrusting has been variously described as a deviate swallow, visceral swallow, retained infantile swallow or reverse swallow.
+Prognosis
+
+Simple tongue thrusting - Excellent
+Complex tongue thrusting - Good
+Retained infantile swallow - Poor
+
+Pediatric Dentistry, Principles and Practice / M.S. Muthu, N. Sivakumar - 2nd Ed","For the given question, choose the correct answer from the options_list.
+
+question: Which of the following type of tongue thrusting has the worst prognosis?
+
+options_list: [option_a:Simple
+option_b:Complex
+,option_c:Retained infantile swallow
+option_d:All of the above]
+","question: Which of the following type of tongue thrusting has the worst prognosis?
+
+option_a:Simple
+option_b:Complex
+option_c:Retained infantile swallow
+option_d:All of the above
+",Complex.,"Cannot determine the correct answer.
+Explanation: The retrieved knowledge did not contain sufficient context to determine the correct answer.",Incorrect,Don't know
+695,"On laboratory investigations in a patient. pH = 7.3, pCO2 = 35 mm Hg. What is the likely acid base imbalance?",Metabolic acidosis,opb,Respiratory acidosis,Metabolic acidosis,Metabolic alkalosis,Respiratory alkalosis,"On laboratory investigations in a patient. pH = 7.3, pCO2 = 35 mm Hg. What is the likely acid base imbalance? Metabolic acidosis. Here is an additional explanation: Ans: B. Metabolic acidosis(Ref: Harrison 19/e p317, 18Ie p365)In the question, pH is decreased (acidosis) & pCO, is decreased (Normal= 40-45 mm Hg).A decreased pCO2 will try to increase pH, hence it must be secondary compensating mechanism.So, the primary mechanism causing the acid base imbalance must be a decrease in serum bicarbonate concentration i.e. metabolic acidosis.","For the given question, choose the correct answer from the options_list.
+
+question: On laboratory investigations in a patient. pH = 7.3, pCO2 = 35 mm Hg. What is the likely acid base imbalance?
+
+options_list: [option_a:Respiratory acidosis
+option_b:Metabolic acidosis
+,option_c:Metabolic alkalosis
+option_d:Respiratory alkalosis]
+","question: On laboratory investigations in a patient. pH = 7.3, pCO2 = 35 mm Hg. What is the likely acid base imbalance?
+
+option_a:Respiratory acidosis
+option_b:Metabolic acidosis
+option_c:Metabolic alkalosis
+option_d:Respiratory alkalosis
+",Respiratory acidosis.,"Answer: option_a
+Explanation: The provided contexts indicate that elevated pCO2 levels are associated with respiratory acidosis. In the given question, the patient's pCO2 level is 35 mm Hg, which is higher than the typical range of 35-45 mm Hg. This elevated pCO2 level suggests a respiratory issue, leading to the diagnosis of respiratory acidosis.",Incorrect,Incorrect
